@@ -2,6 +2,9 @@
 
 * [首页](README.md)
 
+1. [大数据相关](bigdata/README.md)
+    * [平台搭建](bigdata/question1.md)
+
 1. [JAVA](java/README.md)
     * [一个最基本的服务器开发配置模板](java/question1.md)
 
@@ -16,6 +19,7 @@
     * [一些知识点](ml/question3.md)
     * [过拟合和欠拟合](ml/question1.md)
     * [机器学习流行算法一览](ml/question2.md)
+    * [异构计算](ml/question4.md)
     
 5. [Keycloak](keycloak/README.md)
     * [用户统一鉴权服务-适配器使用](keycloak/keycloak-java.md)
