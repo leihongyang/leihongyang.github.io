@@ -34,3 +34,9 @@
     apidoc -i myapp/ -o apidoc/ 
     ```
 
+3. 运行
+    ```
+    docker run -it --name=apache -p 8088:80 -v /home/lhy/git/kycloudapi/apidoc:/var/www/html -d apache2:latest
+    docker exec apache /etc/init.d/apache2 start
+    ```
+
