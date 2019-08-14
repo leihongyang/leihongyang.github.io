@@ -4,6 +4,7 @@
 
 1. [大数据相关](bigdata/README.md)
     * [平台搭建](bigdata/question1.md)
+    * [hadoop 搭建FAQ](bigdata/question2.md)
 
 1. [JAVA](java/README.md)
     * [一个最基本的服务器开发配置模板](java/question1.md)
@@ -11,6 +12,10 @@
 2. [Python](python/README.md)
     * [Python的函数参数传递方法](python/question1.md)
     * [@staticmethod和@classmethod的区别](python/question2.md)
+
+3. [K8S](k8s/README.md)
+    * [k8s单点安装](k8s/question1.md)
+    * [k8s常见FAQ](k8s/question2.md)
 
 3. [数据库](db/README.md)
     * [设置Mysql存储中文](db/question1.md)
