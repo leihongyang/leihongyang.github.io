@@ -1,4 +1,4 @@
-# k8s单点部署
+# k8s部署
 
 参考文档：https://www.kubernetes.org.cn/5650.html
 
@@ -170,6 +170,33 @@
    
    ```
    kubectl get nodes
+   ```
+   
+3. worker 部分
+    * 获得 join命令参数
+    
+    ```
+   只在 master 节点执行
+   kubeadm token create --print-join-command
+   ```
+   
+   * 初始化worker
+   
+   ```
+   只在 worker 节点执行
+   将 x.x.x.x 替换为 master 的实际 ip
+   echo "x.x.x.x  apiserver.demo" >> /etc/hosts
+   kubeadm join apiserver.demo:6443 --token mpfjma.4vjjg8flqihor4vt     --discovery-token-ca-cert-hash sha256:6f7a8e40a810323672de5eee6f4d19aa2dbdb38411845a1bf5dd63485c43d303
+   ```
+   
+   * 移除 worker 节点
+   
+   ```
+   只在 worker 节点执行
+   kubeadm reset
+   
+   只在 master 节点执行
+   kubectl delete node demo-worker-x-x
    ```
    
    

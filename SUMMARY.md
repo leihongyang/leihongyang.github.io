@@ -14,7 +14,7 @@
     * [@staticmethod和@classmethod的区别](python/question2.md)
 
 3. [K8S](k8s/README.md)
-    * [k8s单点安装](k8s/question1.md)
+    * [k8s安装部署](k8s/question1.md)
     * [k8s常见FAQ](k8s/question2.md)
 
 3. [数据库](db/README.md)
