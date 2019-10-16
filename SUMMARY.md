@@ -10,6 +10,7 @@
     * [hdfs](bigdata/hdfs.md)
     * [hbase](bigdata/hbase.md)
     * [spark](bigdata/spark.md)
+    * [rdd操作](bigdata/rdd.md)
 
 1. [JAVA](java/README.md)
     * [一个最基本的服务器开发配置模板](java/question1.md)

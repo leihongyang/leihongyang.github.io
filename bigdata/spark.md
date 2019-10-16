@@ -125,4 +125,6 @@
           val testDS = testDF.as[Coltest]
           ```
         
+4. wordcount
 
+    ![alt text](spark/wordcount.png)
