@@ -1,0 +1,952 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>rdd操作 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../java/" />
+    
+    
+    <link rel="prev" href="spark.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    首页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    大数据
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="question1.html">
+            
+                <a href="question1.html">
+            
+                    
+                    部署准备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="hadoop_install.html">
+            
+                <a href="hadoop_install.html">
+            
+                    
+                    hadoop 部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="question2.html">
+            
+                <a href="question2.html">
+            
+                    
+                    部署常见错误
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="hive.html">
+            
+                <a href="hive.html">
+            
+                    
+                    hive
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="hdfs.html">
+            
+                <a href="hdfs.html">
+            
+                    
+                    hdfs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="hbase.html">
+            
+                <a href="hbase.html">
+            
+                    
+                    hbase
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="spark.html">
+            
+                <a href="spark.html">
+            
+                    
+                    spark
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.8" data-path="rdd.html">
+            
+                <a href="rdd.html">
+            
+                    
+                    rdd操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../java/">
+            
+                <a href="../java/">
+            
+                    
+                    JAVA
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../java/question1.html">
+            
+                <a href="../java/question1.html">
+            
+                    
+                    一个最基本的服务器开发配置模板
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../python/">
+            
+                <a href="../python/">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../python/question1.html">
+            
+                <a href="../python/question1.html">
+            
+                    
+                    Python的函数参数传递方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../python/question2.html">
+            
+                <a href="../python/question2.html">
+            
+                    
+                    @staticmethod和@classmethod的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../k8s/">
+            
+                <a href="../k8s/">
+            
+                    
+                    K8S
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../k8s/question1.html">
+            
+                <a href="../k8s/question1.html">
+            
+                    
+                    k8s安装部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../k8s/question2.html">
+            
+                <a href="../k8s/question2.html">
+            
+                    
+                    k8s常见FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../db/">
+            
+                <a href="../db/">
+            
+                    
+                    数据库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../db/question1.html">
+            
+                <a href="../db/question1.html">
+            
+                    
+                    设置Mysql存储中文
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../ml/">
+            
+                <a href="../ml/">
+            
+                    
+                    机器学习
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../ml/question3.html">
+            
+                <a href="../ml/question3.html">
+            
+                    
+                    一些知识点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../ml/question1.html">
+            
+                <a href="../ml/question1.html">
+            
+                    
+                    过拟合和欠拟合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../ml/question2.html">
+            
+                <a href="../ml/question2.html">
+            
+                    
+                    机器学习流行算法一览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../ml/question4.html">
+            
+                <a href="../ml/question4.html">
+            
+                    
+                    异构计算
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../keycloak/">
+            
+                <a href="../keycloak/">
+            
+                    
+                    Keycloak
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../keycloak/keycloak-java.html">
+            
+                <a href="../keycloak/keycloak-java.html">
+            
+                    
+                    用户统一鉴权服务-适配器使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../keycloak/keycloak-devp.html">
+            
+                <a href="../keycloak/keycloak-devp.html">
+            
+                    
+                    KEYCLOAK 配置文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../idea/">
+            
+                <a href="../idea/">
+            
+                    
+                    IDEA
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../idea/go.html">
+            
+                <a href="../idea/go.html">
+            
+                    
+                    IDEA 无法添加GO SDK的问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../pmp/">
+            
+                <a href="../pmp/">
+            
+                    
+                    PMP相关
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../pmp/pmp.html">
+            
+                <a href="../pmp/pmp.html">
+            
+                    
+                    一张PMP技能图
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../virtual/">
+            
+                <a href="../virtual/">
+            
+                    
+                    虚拟化
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../virtual/question1.html">
+            
+                <a href="../virtual/question1.html">
+            
+                    
+                    docker容器相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../md/">
+            
+                <a href="../md/">
+            
+                    
+                    Markdown
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../md/question1.html">
+            
+                <a href="../md/question1.html">
+            
+                    
+                    Markdown标记语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../other/">
+            
+                <a href="../other/">
+            
+                    
+                    杂项
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../other/question1.html">
+            
+                <a href="../other/question1.html">
+            
+                    
+                    git如何修改已提交的commit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../other/question2.html">
+            
+                <a href="../other/question2.html">
+            
+                    
+                    apidoc 教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >rdd操作</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="rdd">RDD</h1>
+<ol>
+<li><p>&#x8F6C;&#x6362;</p>
+<p> 1.map</p>
+<pre><code> map&#x662F;&#x5BF9;RDD&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x90FD;&#x6267;&#x884C;&#x4E00;&#x4E2A;&#x6307;&#x5B9A;&#x7684;&#x51FD;&#x6570;&#x6765;&#x4EA7;&#x751F;&#x4E00;&#x4E2A;&#x65B0;&#x7684;RDD&#xFF1B;RDD&#x4E4B;&#x95F4;&#x7684;&#x5143;&#x7D20;&#x662F;&#x4E00;&#x5BF9;&#x4E00;&#x5173;&#x7CFB;&#xFF1B;
+ val rdd1 = sc.parallelize(1 to 9, 3)
+ val rdd2 = rdd1.map(x =&gt; x*2)
+ rdd2.collect
+ res3: Array[Int] = Array(2, 4, 6, 8, 10, 12, 14, 16, 18)
+</code></pre><p> 2.filter</p>
+<pre><code> Filter&#x662F;&#x5BF9;RDD&#x5143;&#x7D20;&#x8FDB;&#x884C;&#x8FC7;&#x6EE4;&#xFF1B;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x6570;&#x636E;&#x96C6;&#xFF0C;&#x662F;&#x7ECF;&#x8FC7;func&#x51FD;&#x6570;&#x540E;&#x8FD4;&#x56DE;&#x503C;&#x4E3A;true&#x7684;&#x539F;&#x5143;&#x7D20;&#x7EC4;&#x6210;&#xFF1B;
+ val rdd3 = rdd2.filter (x =&gt; x&gt; 10)
+ rdd3.collect
+ res4: Array[Int] = Array(12, 14, 16, 18)
+</code></pre><p> 3.flatMap</p>
+<pre><code> flatMap&#x7C7B;&#x4F3C;&#x4E8E;map&#xFF0C;&#x4F46;&#x662F;&#x6BCF;&#x4E00;&#x4E2A;&#x8F93;&#x5165;&#x5143;&#x7D20;&#xFF0C;&#x4F1A;&#x88AB;&#x6620;&#x5C04;&#x4E3A;0&#x5230;&#x591A;&#x4E2A;&#x8F93;&#x51FA;&#x5143;&#x7D20;&#xFF08;&#x56E0;&#x6B64;&#xFF0C;func&#x51FD;&#x6570;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x662F;&#x4E00;&#x4E2A;Seq&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x5355;&#x4E00;&#x5143;&#x7D20;&#xFF09;&#xFF0C;RDD&#x4E4B;&#x95F4;&#x7684;&#x5143;&#x7D20;&#x662F;&#x4E00;&#x5BF9;&#x591A;&#x5173;&#x7CFB;&#xFF1B;
+ val rdd4 = rdd3.flatMap (x =&gt; x to 20)
+ res5: Array[Int] = Array(12, 13, 14, 15, 16, 17, 18, 19, 20, 14, 15, 16, 17, 18, 19, 20, 16, 17, 18, 19, 20, 18, 19, 20)
+</code></pre><p> 4.mapPartitions</p>
+<pre><code> mapPartitions&#x662F;map&#x7684;&#x4E00;&#x4E2A;&#x53D8;&#x79CD;&#x3002;map&#x7684;&#x8F93;&#x5165;&#x51FD;&#x6570;&#x662F;&#x5E94;&#x7528;&#x4E8E;RDD&#x4E2D;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#xFF0C;&#x800C;mapPartitions&#x7684;&#x8F93;&#x5165;&#x51FD;&#x6570;&#x662F;&#x6BCF;&#x4E2A;&#x5206;&#x533A;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x628A;&#x6BCF;&#x4E2A;&#x5206;&#x533A;&#x4E2D;&#x7684;&#x5185;&#x5BB9;&#x4F5C;&#x4E3A;&#x6574;&#x4F53;&#x6765;&#x5904;&#x7406;&#x7684;&#x3002;
+</code></pre><p> 5.mapPartitionsWithIndex</p>
+<pre><code> mapPartitionsWithSplit&#x4E0E;mapPartitions&#x7684;&#x529F;&#x80FD;&#x7C7B;&#x4F3C;&#xFF0C; &#x53EA;&#x662F;&#x591A;&#x4F20;&#x5165;split index&#x800C;&#x5DF2;&#xFF0C;&#x6240;&#x6709;func &#x51FD;&#x6570;&#x5FC5;&#x9700;&#x662F; (Int, Iterator&lt;T&gt;) =&gt;Iterator&lt;U&gt; &#x7C7B;&#x578B;&#x3002;
+</code></pre><p> 6.sample</p>
+<pre><code> sample(withReplacement,fraction,seed)&#x662F;&#x6839;&#x636E;&#x7ED9;&#x5B9A;&#x7684;&#x968F;&#x673A;&#x79CD;&#x5B50;seed&#xFF0C;&#x968F;&#x673A;&#x62BD;&#x6837;&#x51FA;&#x6570;&#x91CF;&#x4E3A;frac&#x7684;&#x6570;&#x636E;&#x3002;withReplacement&#xFF1A;&#x662F;&#x5426;&#x653E;&#x56DE;&#x6837;&#xFF1B;fraction&#xFF1A;&#x6BD4;&#x4F8B;&#xFF0C;0.1&#x8868;&#x793A;10% &#xFF1B;
+ val a = sc.parallelize(1 to 10000, 3)
+ a.sample(false, 0.1, 0).count
+ res24: Long = 960
+</code></pre><p> 7.union</p>
+<pre><code> union(otherDataset)&#x662F;&#x6570;&#x636E;&#x5408;&#x5E76;&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x6570;&#x636E;&#x96C6;&#xFF0C;&#x7531;&#x539F;&#x6570;&#x636E;&#x96C6;&#x548C;otherDataset&#x8054;&#x5408;&#x800C;&#x6210;&#x3002;
+ val rdd8 = rdd1.union(rdd3)
+ rdd8.collect
+ res14: Array[Int] = Array(1, 2, 3, 4, 5, 6, 7, 8, 9, 12, 14, 16, 18)
+</code></pre><p> 8.intersection</p>
+<pre><code> intersection(otherDataset)&#x662F;&#x6570;&#x636E;&#x4EA4;&#x96C6;&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x6570;&#x636E;&#x96C6;&#xFF0C;&#x5305;&#x542B;&#x4E24;&#x4E2A;&#x6570;&#x636E;&#x96C6;&#x7684;&#x4EA4;&#x96C6;&#x6570;&#x636E;&#xFF1B;
+ val rdd9 = rdd8.intersection(rdd1)
+ rdd9.collect
+ res16: Array[Int] = Array(6, 1, 7, 8, 2, 3, 9, 4, 5)
+</code></pre><p> 9.distinct</p>
+<pre><code> distinct([numTasks]))&#x662F;&#x6570;&#x636E;&#x53BB;&#x91CD;&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x96C6;&#xFF0C;&#x662F;&#x5BF9;&#x4E24;&#x4E2A;&#x6570;&#x636E;&#x96C6;&#x53BB;&#x9664;&#x91CD;&#x590D;&#x6570;&#x636E;&#xFF0C;numTasks&#x53C2;&#x6570;&#x662F;&#x8BBE;&#x7F6E;&#x4EFB;&#x52A1;&#x5E76;&#x884C;&#x6570;&#x91CF;&#x3002;
+ val rdd10 = rdd8.union(rdd9).distinct
+ rdd10.collect
+ res19: Array[Int] = Array(12, 1, 14, 2, 3, 4, 16, 5, 6, 18, 7, 8, 9)
+</code></pre><p> 10.groupByKey</p>
+<pre><code> groupByKey([numTasks])&#x662F;&#x6570;&#x636E;&#x5206;&#x7EC4;&#x64CD;&#x4F5C;&#xFF0C;&#x5728;&#x4E00;&#x4E2A;&#x7531;&#xFF08;K,V&#xFF09;&#x5BF9;&#x7EC4;&#x6210;&#x7684;&#x6570;&#x636E;&#x96C6;&#x4E0A;&#x8C03;&#x7528;&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#xFF08;K,Seq[V])&#x5BF9;&#x7684;&#x6570;&#x636E;&#x96C6;&#x3002;
+ val rdd0 = sc.parallelize(Array((1,1), (1,2) , (1,3) , (2,1) , (2,2) , (2,3)), 3)
+ val rdd11 = rdd0.groupByKey()
+ rdd11.collect
+ res33: Array[(Int, Iterable[Int])] = Array((1,ArrayBuffer(1, 2, 3)), (2,ArrayBuffer(1, 2, 3)))
+</code></pre><p> 11.reduceByKey</p>
+<pre><code> reduceByKey(func, [numTasks])&#x662F;&#x6570;&#x636E;&#x5206;&#x7EC4;&#x805A;&#x5408;&#x64CD;&#x4F5C;&#xFF0C;&#x5728;&#x4E00;&#x4E2A;&#xFF08;K,V)&#x5BF9;&#x7684;&#x6570;&#x636E;&#x96C6;&#x4E0A;&#x4F7F;&#x7528;&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#xFF08;K,V&#xFF09;&#x5BF9;&#x7684;&#x6570;&#x636E;&#x96C6;&#xFF0C;key&#x76F8;&#x540C;&#x7684;&#x503C;&#xFF0C;&#x90FD;&#x88AB;&#x4F7F;&#x7528;&#x6307;&#x5B9A;&#x7684;reduce&#x51FD;&#x6570;&#x805A;&#x5408;&#x5230;&#x4E00;&#x8D77;&#x3002;
+ val rdd12 = rdd0.reduceByKey((x,y) =&gt; x + y)
+ rdd12.collect
+ res34: Array[(Int, Int)] = Array((1,6), (2,6))
+</code></pre><p> 12.aggregateByKey</p>
+<pre><code> aggreateByKey(zeroValue: U)(seqOp: (U, T)=&gt; U, combOp: (U, U) =&gt;U) &#x548C;reduceByKey&#x7684;&#x4E0D;&#x540C;&#x5728;&#x4E8E;&#xFF0C;reduceByKey&#x8F93;&#x5165;&#x8F93;&#x51FA;&#x90FD;&#x662F;(K,
+ V)&#xFF0C;&#x800C;aggreateByKey&#x8F93;&#x51FA;&#x662F;(K,U)&#xFF0C;&#x53EF;&#x4EE5;&#x4E0D;&#x540C;&#x4E8E;&#x8F93;&#x5165;(K, V) &#xFF0C;aggreateByKey&#x7684;&#x4E09;&#x4E2A;&#x53C2;&#x6570;&#xFF1A;
+ zeroValue: U&#xFF0C;&#x521D;&#x59CB;&#x503C;&#xFF0C;&#x6BD4;&#x5982;&#x7A7A;&#x5217;&#x8868;{} &#xFF1B;
+ seqOp: (U,T)=&gt; U&#xFF0C;seq&#x64CD;&#x4F5C;&#x7B26;&#xFF0C;&#x63CF;&#x8FF0;&#x5982;&#x4F55;&#x5C06;T&#x5408;&#x5E76;&#x5165;U&#xFF0C;&#x6BD4;&#x5982;&#x5982;&#x4F55;&#x5C06;item&#x5408;&#x5E76;&#x5230;&#x5217;&#x8868; &#xFF1B;
+ combOp: (U,U) =&gt;U&#xFF0C;comb&#x64CD;&#x4F5C;&#x7B26;&#xFF0C;&#x63CF;&#x8FF0;&#x5982;&#x679C;&#x5408;&#x5E76;&#x4E24;&#x4E2A;U&#xFF0C;&#x6BD4;&#x5982;&#x5408;&#x5E76;&#x4E24;&#x4E2A;&#x5217;&#x8868; &#xFF1B;
+ &#x6240;&#x4EE5;aggreateByKey&#x53EF;&#x4EE5;&#x770B;&#x6210;&#x66F4;&#x9AD8;&#x62BD;&#x8C61;&#x7684;&#xFF0C;&#x66F4;&#x7075;&#x6D3B;&#x7684;reduce&#x6216;group &#x3002;
+ val z = sc.parallelize(List(1,2,3,4,5,6), 2)
+ z.aggreate(0)(math.max(_, _), _ + _)
+ res40: Int = 9
+ val z = sc.parallelize(List((1, 3), (1, 2), (1, 4), (2, 3)))
+ z.aggregateByKey(0)(math.max(_, _), _ + _)
+ res2: Array[(Int, Int)] = Array((2,3), (1,9))
+</code></pre><p> 13.combineByKey</p>
+<pre><code> combineByKey&#x662F;&#x5BF9;RDD&#x4E2D;&#x7684;&#x6570;&#x636E;&#x96C6;&#x6309;&#x7167;Key&#x8FDB;&#x884C;&#x805A;&#x5408;&#x64CD;&#x4F5C;&#x3002;&#x805A;&#x5408;&#x64CD;&#x4F5C;&#x7684;&#x903B;&#x8F91;&#x662F;&#x901A;&#x8FC7;&#x81EA;&#x5B9A;&#x4E49;&#x51FD;&#x6570;&#x63D0;&#x4F9B;&#x7ED9;combineByKey&#x3002;
+ combineByKey[C](createCombiner: (V) &#x21D2; C, mergeValue: (C, V) &#x21D2; C, mergeCombiners: (C, C)
+ &#x21D2; C, numPartitions: Int):RDD[(K, C)]&#x628A;(K,V) &#x7C7B;&#x578B;&#x7684;RDD&#x8F6C;&#x6362;&#x4E3A;(K,C)&#x7C7B;&#x578B;&#x7684;RDD&#xFF0C;C&#x548C;V&#x53EF;&#x4EE5;&#x4E0D;&#x4E00;&#x6837;&#x3002;combineByKey&#x4E09;&#x4E2A;&#x53C2;&#x6570;&#xFF1A;
+ val data = Array((1, 1.0), (1, 2.0), (1, 3.0), (2, 4.0), (2, 5.0), (2, 6.0))
+ val rdd = sc.parallelize(data, 2)
+ val combine1 = rdd.combineByKey(createCombiner = (v:Double) =&gt; (v:Double, 1),
+ mergeValue = (c:(Double, Int), v:Double) =&gt; (c._1 + v, c._2 + 1),
+ mergeCombiners = (c1:(Double, Int), c2:(Double, Int)) =&gt; (c1._1 + c2._1, c1._2 + c2._2),numPartitions = 2 )combine1.collect
+ res0: Array[(Int, (Double, Int))] = Array((2,(15.0,3)), (1,(6.0,3)))
+</code></pre><p> 14.sortByKey</p>
+<pre><code> sortByKey([ascending],[numTasks])&#x662F;&#x6392;&#x5E8F;&#x64CD;&#x4F5C;&#xFF0C;&#x5BF9;(K,V)&#x7C7B;&#x578B;&#x7684;&#x6570;&#x636E;&#x6309;&#x7167;K&#x8FDB;&#x884C;&#x6392;&#x5E8F;&#xFF0C;&#x5176;&#x4E2D;K&#x9700;&#x8981;&#x5B9E;&#x73B0;Ordered&#x65B9;&#x6CD5;&#x3002;
+ val rdd14 = rdd0.sortByKey()
+ rdd14.collect
+ res36: Array[(Int, Int)] = Array((1,1), (1,2), (1,3), (2,1), (2,2), (2,3))
+</code></pre><p> 15.join</p>
+<pre><code> join(otherDataset, [numTasks])&#x662F;&#x8FDE;&#x63A5;&#x64CD;&#x4F5C;&#xFF0C;&#x5C06;&#x8F93;&#x5165;&#x6570;&#x636E;&#x96C6;(K,V)&#x548C;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x96C6;(K,W)&#x8FDB;&#x884C;Join&#xFF0C; &#x5F97;&#x5230;(K, (V,W))&#xFF1B;&#x8BE5;&#x64CD;&#x4F5C;&#x662F;&#x5BF9;&#x4E8E;&#x76F8;&#x540C;K&#x7684;V&#x548C;W&#x96C6;&#x5408;&#x8FDB;&#x884C;&#x7B1B;&#x5361;&#x5C14;&#x79EF; &#x64CD;&#x4F5C;&#xFF0C;&#x4E5F;&#x5373;V&#x548C;W&#x7684;&#x6240;&#x6709;&#x7EC4;&#x5408;&#xFF1B;
+ val rdd15 = rdd0.join(rdd0)
+ rdd15.collect
+ res37: Array[(Int, (Int, Int))] = Array((1,(1,1)), (1,(1,2)), (1,(1,3)), (1,(2,1)), (1,(2,2)), (1,(2,3)), (1,(3,1)), (1,(3,2)), (1,(3,3)), (2,(1,1)),(2,(1,2)), (2,(1,3)), (2,(2,1)), (2,(2,2)), (2,(2,3)), (2,(3,1)), (2,(3,2)), (2,(3,3)))
+ &#x8FDE;&#x63A5;&#x64CD;&#x4F5C;&#x9664;join &#x5916;&#xFF0C;&#x8FD8;&#x6709;&#x5DE6;&#x8FDE;&#x63A5;&#x3001;&#x53F3;&#x8FDE;&#x63A5;&#x3001;&#x5168;&#x8FDE;&#x63A5;&#x64CD;&#x4F5C;&#x51FD;&#x6570;&#xFF1A; leftOuterJoin&#x3001;rightOuterJoin&#x3001;fullOuterJoin&#x3002;
+</code></pre><p> 16.cogroup</p>
+<pre><code> cogroup(otherDataset, [numTasks])&#x662F;&#x5C06;&#x8F93;&#x5165;&#x6570;&#x636E;&#x96C6;(K, V)&#x548C;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x96C6;(K, W)&#x8FDB;&#x884C;cogroup&#xFF0C;&#x5F97;&#x5230;&#x4E00;&#x4E2A;&#x683C;&#x5F0F;&#x4E3A;(K, Seq[V], Seq[W])&#x7684;&#x6570;&#x636E;&#x96C6;&#x3002;
+ val rdd16 = rdd0.cogroup(rdd0)
+ rdd16.collect
+ res38: Array[(Int, (Iterable[Int], Iterable[Int]))] = Array((1,(ArrayBuffer(1, 2, 3),ArrayBuffer(1, 2, 3))), (2,(ArrayBuffer(1, 2,3),ArrayBuffer(1, 2, 3))))
+</code></pre><p> 17.cartesian</p>
+<pre><code> cartesian(otherDataset)&#x662F;&#x505A;&#x7B1B;&#x5361;&#x5C14;&#x79EF;&#xFF1A;&#x5BF9;&#x4E8E;&#x6570;&#x636E;&#x96C6;T&#x548C;U &#x8FDB;&#x884C;&#x7B1B;&#x5361;&#x5C14;&#x79EF;&#x64CD;&#x4F5C;&#xFF0C; &#x5F97;&#x5230;(T, U)&#x683C;&#x5F0F;&#x7684;&#x6570;&#x636E;&#x96C6;&#x3002;
+ val rdd17 = rdd1.cartesian(rdd3)
+ rdd17.collect
+ res39: Array[(Int, Int)] = Array((1,12), (2,12), (3,12), (1,14), (1,16), (1,18), (2,14), (2,16), (2,18), (3,14), (3,16), (3,18), (4,12), (5,12),(6,12), (4,14), (4,16), (4,18), (5,14), (5,16), (5,18), (6,14), (6,16), (6,18), (7,12), (8,12), (9,12), (7,14), (7,16), (7,18), (8,14), (8,16),(8,18), (9,14), (9,16), (9,18))
+</code></pre></li>
+<li><p>&#x52A8;&#x4F5C;</p>
+<p> 1.reduce</p>
+<pre><code> reduce(func)&#x662F;&#x5BF9;&#x6570;&#x636E;&#x96C6;&#x7684;&#x6240;&#x6709;&#x5143;&#x7D20;&#x6267;&#x884C;&#x805A;&#x96C6;(func)&#x51FD;&#x6570;&#xFF0C;&#x8BE5;&#x51FD;&#x6570;&#x5FC5;&#x987B;&#x662F;&#x53EF;&#x4EA4;&#x6362;&#x7684;&#x3002;
+ val rdd1 = sc.parallelize(1 to 9, 3)
+ val rdd2 = rdd1.reduce(_ + _)
+ rdd2: Int = 45
+</code></pre><p> 2.collect</p>
+<pre><code> collect&#x76F8;&#x5F53;&#x4E8E;toArray&#xFF0C;toArray&#x5DF2;&#x7ECF;&#x8FC7;&#x65F6;&#x4E0D;&#x63A8;&#x8350;&#x4F7F;&#x7528;&#xFF0C;collect&#x5C06;&#x5206;&#x5E03;&#x5F0F;&#x7684;RDD&#x8FD4;&#x56DE;&#x4E3A;&#x4E00;&#x4E2A;&#x5355;&#x673A;&#x7684;scala Array&#x6570;&#x7EC4;&#x3002;&#x5728;&#x8FD9;&#x4E2A;&#x6570;&#x7EC4;&#x4E0A;&#x8FD0;&#x7528;scala&#x7684;&#x51FD;&#x6570;&#x5F0F;&#x64CD;&#x4F5C;&#x3002;
+ rdd1.collect()
+ res8: Array[Int] = Array(1, 2, 3, 4, 5, 6, 7, 8, 9)
+</code></pre><p> 3.count</p>
+<pre><code> &#x8FD4;&#x56DE;&#x6570;&#x636E;&#x96C6;&#x4E2D;&#x5143;&#x7D20;&#x7684;&#x4E2A;&#x6570;&#x3002;
+ rdd1.count()
+ res9: Long = 9
+</code></pre><p> 4.first</p>
+<pre><code> &#x8FD4;&#x56DE;&#x6570;&#x636E;&#x96C6;&#x4E2D;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#xFF0C; &#x7C7B;&#x4F3C;&#x4E8E;take(1)&#x3002;
+ rdd1.first()
+ res10: Int = 1
+</code></pre><p> 5.take</p>
+<pre><code> Take(n)&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x6570;&#x636E;&#x96C6;&#x4E2D;&#x524D;n&#x4E2A;&#x5143;&#x7D20;&#x7684;&#x6570;&#x7EC4;&#xFF0C; &#x5F53;&#x524D;&#x8BE5;&#x64CD;&#x4F5C;&#x4E0D;&#x80FD;&#x5E76;&#x884C;&#x3002;
+ rdd1.take(3)
+ res11: Array[Int] = Array(1, 2, 3)
+</code></pre><p> 6.takeSample</p>
+<pre><code> takeSample(withReplacement,num, [seed])&#x8FD4;&#x56DE;&#x5305;&#x542B;&#x968F;&#x673A;&#x7684;num&#x4E2A;&#x5143;&#x7D20;&#x7684;&#x6570;&#x7EC4;&#xFF0C;&#x548C;Sample&#x4E0D;&#x540C;&#xFF0C;takeSample &#x662F;&#x884C;&#x52A8;&#x64CD;&#x4F5C;&#xFF0C;&#x6240;&#x4EE5;&#x8FD4;&#x56DE;&#x7684;&#x662F;&#x6570;&#x7EC4;&#x800C;&#x4E0D;&#x662F;RDD &#xFF0C; &#x5176;&#x4E2D;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;withReplacement&#x662F;&#x62BD;&#x6837;&#x65F6;&#x662F;&#x5426;&#x653E;&#x56DE;&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;num&#x4F1A;&#x7CBE;&#x786E;&#x6307;&#x5B9A;&#x62BD;&#x6837;&#x6570;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x6BD4;&#x4F8B;&#x3002;
+ rdd1.takeSample(true, 4)
+ res15: Array[Int] = Array(9, 5, 5, 6)
+</code></pre><p> 7.takeOrdered</p>
+<pre><code> takeOrdered(n&#xFF0C; [ordering])&#x662F;&#x8FD4;&#x56DE;&#x5305;&#x542B;&#x968F;&#x673A;&#x7684;n&#x4E2A;&#x5143;&#x7D20;&#x7684;&#x6570;&#x7EC4;&#xFF0C;&#x6309;&#x7167;&#x987A;&#x5E8F;&#x8F93;&#x51FA;&#x3002;
+ rdd1.takeOrdered(4)
+ res16: Array[Int] = Array(1, 2, 3, 4)
+</code></pre><p> 8.saveAsTextFile</p>
+<pre><code> &#x628A;&#x6570;&#x636E;&#x96C6;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#x5199;&#x5230;&#x4E00;&#x4E2A;&#x6587;&#x672C;&#x6587;&#x4EF6;&#xFF0C;Spark&#x4F1A;&#x5BF9;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x8C03;&#x7528;toString&#x65B9;&#x6CD5;&#x6765;&#x628A;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x5B58;&#x6210;&#x6587;&#x672C;&#x6587;&#x4EF6;&#x7684;&#x4E00;&#x884C;&#x3002;&#x5B58;&#x50A8;&#x5230;HDFS&#x7684;&#x6307;&#x5B9A;&#x76EE;&#x5F55;&#x3002;
+</code></pre><p> 9.countByKey</p>
+<pre><code> &#x5BF9;&#x4E8E;(K, V)&#x7C7B;&#x578B;&#x7684;RDD. &#x8FD4;&#x56DE;&#x4E00;&#x4E2A;(K, Int)&#x7684;map&#xFF0C; Int&#x4E3A;K&#x7684;&#x4E2A;&#x6570;&#x3002;
+</code></pre><p> 10.foreach</p>
+<pre><code> foreach(func)&#x662F;&#x5BF9;&#x6570;&#x636E;&#x96C6;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x90FD;&#x6267;&#x884C;func&#x51FD;&#x6570;&#x3002;&#x4E0D;&#x8FD4;&#x56DE;RDD&#x548C;Array&#xFF0C;&#x800C;&#x662F;&#x8FD4;&#x56DE;Uint&#x3002;
+</code></pre><p> 11.saveAsObjectFile</p>
+<pre><code> saveAsObjectFile&#x5C06;&#x5206;&#x533A;&#x4E2D;&#x7684;&#x6BCF;10&#x4E2A;&#x5143;&#x7D20;&#x7EC4;&#x6210;&#x4E00;&#x4E2A;Array&#xFF0C;&#x7136;&#x540E;&#x5C06;&#x8FD9;&#x4E2A;Array&#x5E8F;&#x5217;&#x5316;&#xFF0C;&#x6620;&#x5C04;&#x4E3A;&#xFF08;Null&#xFF0C;BytesWritable&#xFF08;Y&#xFF09;&#xFF09;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x5199;&#x5165;HDFS&#x4E3A;SequenceFile&#x7684;&#x683C;&#x5F0F;&#x3002;
+</code></pre><p> 12.collectAsMap</p>
+<pre><code> collectAsMap&#x5BF9;&#xFF08;K&#xFF0C;V&#xFF09;&#x578B;&#x7684;RDD&#x6570;&#x636E;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5355;&#x673A;HashMap&#x3002;&#x5BF9;&#x4E8E;&#x91CD;&#x590D;K&#x7684;RDD&#x5143;&#x7D20;&#xFF0C;&#x540E;&#x9762;&#x7684;&#x5143;&#x7D20;&#x8986;&#x76D6;&#x524D;&#x9762;&#x7684;&#x5143;&#x7D20;&#x3002;
+</code></pre><p> 13.reduceByKeyLocally</p>
+<pre><code> &#x5B9E;&#x73B0;&#x7684;&#x662F;&#x5148;reduce&#x518D;collectAsMap&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x5148;&#x5BF9;RDD&#x7684;&#x6574;&#x4F53;&#x8FDB;&#x884C;reduce&#x64CD;&#x4F5C;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x6536;&#x96C6;&#x6240;&#x6709;&#x7ED3;&#x679C;&#x8FD4;&#x56DE;&#x4E3A;&#x4E00;&#x4E2A;HashMap&#x3002;
+</code></pre><p> 14.lookup</p>
+<pre><code> Lookup&#x51FD;&#x6570;&#x5BF9;&#xFF08;Key&#xFF0C;Value&#xFF09;&#x578B;&#x7684;RDD&#x64CD;&#x4F5C;&#xFF0C;&#x8FD4;&#x56DE;&#x6307;&#x5B9A;Key&#x5BF9;&#x5E94;&#x7684;&#x5143;&#x7D20;&#x5F62;&#x6210;&#x7684;Seq&#x3002;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x5904;&#x7406;&#x4F18;&#x5316;&#x7684;&#x90E8;&#x5206;&#x5728;&#x4E8E;&#xFF0C;&#x5982;&#x679C;&#x8FD9;&#x4E2A;RDD&#x5305;&#x542B;&#x5206;&#x533A;&#x5668;&#xFF0C;&#x5219;&#x53EA;&#x4F1A;&#x5BF9;&#x5E94;&#x5904;&#x7406;K&#x6240;&#x5728;&#x7684;&#x5206;&#x533A;&#xFF0C;&#x7136;&#x540E;&#x8FD4;&#x56DE;&#x7531;&#xFF08;K&#xFF0C;V&#xFF09;&#x5F62;&#x6210;&#x7684;Seq&#x3002;&#x5982;&#x679C;RDD&#x4E0D;&#x5305;&#x542B;&#x5206;&#x533A;&#x5668;&#xFF0C;&#x5219;&#x9700;&#x8981;&#x5BF9;&#x5168;RDD&#x5143;&#x7D20;&#x8FDB;&#x884C;&#x66B4;&#x529B;&#x626B;&#x63CF;&#x5904;&#x7406;&#xFF0C;&#x641C;&#x7D22;&#x6307;&#x5B9A;K&#x5BF9;&#x5E94;&#x7684;&#x5143;&#x7D20;&#x3002;
+</code></pre><p> 15.top</p>
+<pre><code> top&#x53EF;&#x8FD4;&#x56DE;&#x6700;&#x5927;&#x7684;k&#x4E2A;&#x5143;&#x7D20;&#x3002;
+</code></pre><p> 16.reduce</p>
+<pre><code> reduce&#x51FD;&#x6570;&#x76F8;&#x5F53;&#x4E8E;&#x5BF9;RDD&#x4E2D;&#x7684;&#x5143;&#x7D20;&#x8FDB;&#x884C;reduceLeft&#x51FD;&#x6570;&#x7684;&#x64CD;&#x4F5C;&#x3002;&#x51FD;&#x6570;&#x5B9E;&#x73B0;&#x5982;&#x4E0B;&#x3002;
+ Some&#xFF08;iter.reduceLeft&#xFF08;cleanF&#xFF09;&#xFF09;
+ reduceLeft&#x5148;&#x5BF9;&#x4E24;&#x4E2A;&#x5143;&#x7D20;&lt;K&#xFF0C;V&gt;&#x8FDB;&#x884C;reduce&#x51FD;&#x6570;&#x64CD;&#x4F5C;&#xFF0C;&#x7136;&#x540E;&#x5C06;&#x7ED3;&#x679C;&#x548C;&#x8FED;&#x4EE3;&#x5668;&#x53D6;&#x51FA;&#x7684;&#x4E0B;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&lt;k&#xFF0C;V&gt;&#x8FDB;&#x884C;reduce&#x51FD;&#x6570;&#x64CD;&#x4F5C;&#xFF0C;&#x76F4;&#x5230;&#x8FED;&#x4EE3;&#x5668;&#x904D;&#x5386;&#x5B8C;&#x6240;&#x6709;&#x5143;&#x7D20;&#xFF0C;&#x5F97;&#x5230;&#x6700;&#x540E;&#x7ED3;&#x679C;&#x3002;
+ &#x5728;RDD&#x4E2D;&#xFF0C;&#x5148;&#x5BF9;&#x6BCF;&#x4E2A;&#x5206;&#x533A;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x5143;&#x7D20;&lt;K&#xFF0C;V&gt;&#x7684;&#x96C6;&#x5408;&#x5206;&#x522B;&#x8FDB;&#x884C;reduceLeft&#x3002;&#x6BCF;&#x4E2A;&#x5206;&#x533A;&#x5F62;&#x6210;&#x7684;&#x7ED3;&#x679C;&#x76F8;&#x5F53;&#x4E8E;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&lt;K&#xFF0C;V&gt;&#xFF0C;&#x518D;&#x5BF9;&#x8FD9;&#x4E2A;&#x7ED3;&#x679C;&#x96C6;&#x5408;&#x8FDB;&#x884C;reduceleft&#x64CD;&#x4F5C;&#x3002;
+</code></pre><p> 17.fold</p>
+<pre><code> fold&#x548C;reduce&#x7684;&#x539F;&#x7406;&#x76F8;&#x540C;&#xFF0C;&#x4F46;&#x662F;&#x4E0E;reduce&#x4E0D;&#x540C;&#xFF0C;&#x76F8;&#x5F53;&#x4E8E;&#x6BCF;&#x4E2A;reduce&#x65F6;&#xFF0C;&#x8FED;&#x4EE3;&#x5668;&#x53D6;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x662F;zeroValue&#x3002;
+</code></pre></li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="spark.html" class="navigation navigation-prev " aria-label="Previous page: spark">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../java/" class="navigation navigation-next " aria-label="Next page: JAVA">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"rdd操作","level":"1.2.8","depth":2,"next":{"title":"JAVA","level":"1.3","depth":1,"path":"java/README.md","ref":"java/README.md","articles":[{"title":"一个最基本的服务器开发配置模板","level":"1.3.1","depth":2,"path":"java/question1.md","ref":"java/question1.md","articles":[]}]},"previous":{"title":"spark","level":"1.2.7","depth":2,"path":"bigdata/spark.md","ref":"bigdata/spark.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"bigdata/rdd.md","mtime":"2019-10-16T06:10:02.395Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-16T06:58:07.124Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
