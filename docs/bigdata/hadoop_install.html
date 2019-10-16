@@ -1,0 +1,996 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>hadoop 部署 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="question2.html" />
+    
+    
+    <link rel="prev" href="question1.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    首页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    大数据
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="question1.html">
+            
+                <a href="question1.html">
+            
+                    
+                    部署准备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.2" data-path="hadoop_install.html">
+            
+                <a href="hadoop_install.html">
+            
+                    
+                    hadoop 部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="question2.html">
+            
+                <a href="question2.html">
+            
+                    
+                    部署常见错误
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="hive.html">
+            
+                <a href="hive.html">
+            
+                    
+                    hive
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="hdfs.html">
+            
+                <a href="hdfs.html">
+            
+                    
+                    hdfs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="hbase.html">
+            
+                <a href="hbase.html">
+            
+                    
+                    hbase
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="spark.html">
+            
+                <a href="spark.html">
+            
+                    
+                    spark
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="rdd.html">
+            
+                <a href="rdd.html">
+            
+                    
+                    rdd操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../java/">
+            
+                <a href="../java/">
+            
+                    
+                    JAVA
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../java/question1.html">
+            
+                <a href="../java/question1.html">
+            
+                    
+                    一个最基本的服务器开发配置模板
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../python/">
+            
+                <a href="../python/">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../python/question1.html">
+            
+                <a href="../python/question1.html">
+            
+                    
+                    Python的函数参数传递方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../python/question2.html">
+            
+                <a href="../python/question2.html">
+            
+                    
+                    @staticmethod和@classmethod的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../k8s/">
+            
+                <a href="../k8s/">
+            
+                    
+                    K8S
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../k8s/question1.html">
+            
+                <a href="../k8s/question1.html">
+            
+                    
+                    k8s安装部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../k8s/question2.html">
+            
+                <a href="../k8s/question2.html">
+            
+                    
+                    k8s常见FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../db/">
+            
+                <a href="../db/">
+            
+                    
+                    数据库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../db/question1.html">
+            
+                <a href="../db/question1.html">
+            
+                    
+                    设置Mysql存储中文
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../ml/">
+            
+                <a href="../ml/">
+            
+                    
+                    机器学习
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../ml/question3.html">
+            
+                <a href="../ml/question3.html">
+            
+                    
+                    一些知识点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../ml/question1.html">
+            
+                <a href="../ml/question1.html">
+            
+                    
+                    过拟合和欠拟合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../ml/question2.html">
+            
+                <a href="../ml/question2.html">
+            
+                    
+                    机器学习流行算法一览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../ml/question4.html">
+            
+                <a href="../ml/question4.html">
+            
+                    
+                    异构计算
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../keycloak/">
+            
+                <a href="../keycloak/">
+            
+                    
+                    Keycloak
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../keycloak/keycloak-java.html">
+            
+                <a href="../keycloak/keycloak-java.html">
+            
+                    
+                    用户统一鉴权服务-适配器使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../keycloak/keycloak-devp.html">
+            
+                <a href="../keycloak/keycloak-devp.html">
+            
+                    
+                    KEYCLOAK 配置文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../idea/">
+            
+                <a href="../idea/">
+            
+                    
+                    IDEA
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../idea/go.html">
+            
+                <a href="../idea/go.html">
+            
+                    
+                    IDEA 无法添加GO SDK的问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../pmp/">
+            
+                <a href="../pmp/">
+            
+                    
+                    PMP相关
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../pmp/pmp.html">
+            
+                <a href="../pmp/pmp.html">
+            
+                    
+                    一张PMP技能图
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../virtual/">
+            
+                <a href="../virtual/">
+            
+                    
+                    虚拟化
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../virtual/question1.html">
+            
+                <a href="../virtual/question1.html">
+            
+                    
+                    docker容器相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../md/">
+            
+                <a href="../md/">
+            
+                    
+                    Markdown
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../md/question1.html">
+            
+                <a href="../md/question1.html">
+            
+                    
+                    Markdown标记语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../other/">
+            
+                <a href="../other/">
+            
+                    
+                    杂项
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../other/question1.html">
+            
+                <a href="../other/question1.html">
+            
+                    
+                    git如何修改已提交的commit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../other/question2.html">
+            
+                <a href="../other/question2.html">
+            
+                    
+                    apidoc 教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >hadoop 部署</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="hadoop-&#x5B8C;&#x5168;&#x5206;&#x5E03;&#x5F0F;&#x90E8;&#x7F72;&#x5B89;&#x88C5;">hadoop &#x5B8C;&#x5168;&#x5206;&#x5E03;&#x5F0F;&#x90E8;&#x7F72;&#x5B89;&#x88C5;</h1>
+<ol>
+<li><p>&#x73AF;&#x5883;&#x51C6;&#x5907;</p>
+<ul>
+<li>centos&#x6216;&#x8005;ubuntu&#x7B49;&#x4EFB;&#x610F;linux&#x7CFB;&#x7EDF;&#xFF08;&#x6216;&#x5E26;&#x6709;Cygwin&#x7684;windows&#x7CFB;&#x7EDF;&#xFF09;</li>
+<li>jdk&#x73AF;&#x5883;&#xFF08;hadoop 3.x&#x9700;&#x8981;jdk8&#x4EE5;&#x4E0A;&#x7248;&#x672C;&#xFF09;</li>
+<li>&#x7F51;&#x7EDC;&#x53EF;&#x7528;&#xFF0C;&#x81F3;&#x5C11;&#x8282;&#x70B9;&#x95F4;&#x4E92;&#x901A;&#xFF0C;&#x6700;&#x597D;&#x8BBE;&#x7F6E;&#x4E3A;&#x9759;&#x6001;ip</li>
+<li>hosts&#x6587;&#x4EF6;&#x4E2D;&#x5C06;&#x5B9E;&#x9645;ip&#x548C;hostname&#x6620;&#x5C04;&#x8D77;&#x6765;&#xFF0C;&#x6240;&#x6709;&#x8282;&#x70B9;&#x90FD;&#x5199;&#x8FDB;&#x53BB;</li>
+<li>&#x591A;&#x4E2A;&#x8282;&#x70B9;ssh&#x514D;&#x5BC6;</li>
+</ul>
+</li>
+<li><p>&#x89E3;&#x538B;&#x6587;&#x4EF6;&#x5E76;&#x914D;&#x7F6E;&#x73AF;&#x5883;&#x53D8;&#x91CF;</p>
+<ul>
+<li>&#x5C06;hadoop-bin.tar.gz&#x89E3;&#x538B;&#x81F3;&#x8981;&#x5B89;&#x88C5;&#x7684;&#x76EE;&#x5F55;</li>
+<li><p>&#x7F16;&#x8F91;/etc/profile</p>
+<pre><code># &#x6DFB;&#x52A0;hadoop&#x73AF;&#x5883;&#x53D8;&#x91CF;
+export HADOOP_HOME=/usr/local/hadoop
+export PATH=$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin
+
+# &#x6DFB;&#x52A0;zk&#x73AF;&#x5883;&#x53D8;&#x91CF;&#xFF08;&#x53EF;&#x9009;&#xFF09;
+export ZOOKEEPER_HOME=/usr/local/zookeeper
+export PATH=$PATH:$ZOOKEEPER_HOME/bin
+</code></pre></li>
+<li><code>source /etc/profile</code></li>
+</ul>
+</li>
+<li><p>zk&#x5B89;&#x88C5;&#xFF08;&#x53EF;&#x9009;&#xFF09;</p>
+<ul>
+<li>&#x7F16;&#x8F91;&#x914D;&#x7F6E;&#x6587;&#x4EF6;<pre><code>  cp /usr/local/zookeeper/conf/zoo_sample.cfg /usr/local/zookeeper/conf/zoo.cfg
+      tickTime=2000
+      dataDir=/opt/data/zookeeper # &#x6570;&#x636E;&#x5B58;&#x653E;&#x8DEF;&#x5F84;
+      clientPort=2181
+      initLimit=5
+      syncLimit=2
+      server.1=node2:2888:3888
+      server.2=node3:2888:3888
+      server.3=node4:2888:3888
+</code></pre><ul>
+<li>&#x5C06;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x590D;&#x5236;&#x5230;&#x5176;&#x4ED6;&#x8282;&#x70B9;<pre><code>scp /usr/local/zookeeper/conf/zoo.cfg node2:/usr/local/zookeeper/conf/
+</code></pre></li>
+<li>&#x521B;&#x5EFA;&#x8282;&#x70B9;ID&#xFF0C;&#x5728;&#x914D;&#x7F6E;&#x7684; dataDir &#x8DEF;&#x5F84;&#x4E2D;&#x6DFB;&#x52A0;myid&#x6587;&#x4EF6;<pre><code>echo &quot;1&quot; &gt; myid
+</code></pre></li>
+<li>&#x542F;&#x52A8; zookeeper<pre><code>zkServer.sh start
+</code></pre></li>
+<li>&#x68C0;&#x9A8C;<pre><code>jps
+</code></pre></li>
+<li>&#x914D;&#x7F6E;zk&#x5F00;&#x673A;&#x81EA;&#x542F;&#xFF08;&#x53EF;&#x9009;&#xFF09;<ul>
+<li>&#x53C2;&#x8003;&#xFF1A;<a href="https://blog.csdn.net/afgasdg/article/details/79277926" target="_blank">https://blog.csdn.net/afgasdg/article/details/79277926</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>hadoop&#x914D;&#x7F6E;&#x6587;&#x4EF6;</p>
+<ul>
+<li><a href="http://hadoop.apache.org/docs/r3.0.0/hadoop-project-dist/hadoop-hdfs/hdfs-default.xml" target="_blank">http://hadoop.apache.org/docs/r3.0.0/hadoop-project-dist/hadoop-hdfs/hdfs-default.xml</a></li>
+<li>hdfs-site.xml<ul>
+<li><pre><code>&lt;configuration&gt;
+  &lt;!-- &#x8FD9;&#x91CC;&#x4EC5;&#x5F53;&#x9700;&#x8981;&#x914D;&#x7F6E;&#x591A;&#x4E2A;namenode&#x65F6;&#x914D;&#x7F6E;
+    &lt;property&gt;
+        &lt;!--&#x8FD9;&#x91CC;&#x914D;&#x7F6E;&#x903B;&#x8F91;&#x540D;&#x79F0; --&gt;
+        &lt;name&gt;dfs.nameservices&lt;/name&gt;
+        &lt;value&gt;hbzx&lt;/value&gt;
+    &lt;/property&gt;
+    &lt;property&gt;
+        &lt;!-- &#x914D;&#x7F6E;namenode &#x7684;&#x540D;&#x79F0;&#xFF0C;&#x591A;&#x4E2A;&#x7528;&#x9017;&#x53F7;&#x5206;&#x5272;  --&gt;
+        &lt;name&gt;dfs.ha.namenodes.hbzx&lt;/name&gt;
+        &lt;value&gt;nn1,nn2&lt;/value&gt;
+    &lt;/property&gt;
+  --&gt;
+  &lt;property&gt;
+      &lt;name&gt;dfs.permissions&lt;/name&gt;
+      &lt;value&gt;false&lt;/value&gt;
+  &lt;/property&gt;
+  &lt;property&gt;
+      &lt;name&gt;dfs.replication&lt;/name&gt;
+      &lt;value&gt;2&lt;/value&gt;
+  &lt;/property&gt;
+  &lt;property&gt;
+      &lt;name&gt;dfs.http.address&lt;/name&gt;
+      &lt;value&gt;0.0.0.0:50070&lt;/value&gt;
+  &lt;/property&gt;
+&lt;/configuration&gt;
+</code></pre></li>
+</ul>
+</li>
+<li>core-site.xml<ul>
+<li><pre><code>&lt;configuration&gt;
+  &lt;property&gt;
+      &lt;name&gt;hadoop.tmp.dir&lt;/name&gt;
+      &lt;value&gt;/tmp/hadoop/data/tmp&lt;/value&gt;
+  &lt;/property&gt;
+  &lt;property&gt;
+      &lt;name&gt;fs.defaultFS&lt;/name&gt;
+      &lt;value&gt;hdfs://master:9000&lt;/value&gt;
+  &lt;/property&gt;
+  &lt;!-- &#x5F53;&#x9700;&#x8981;&#x6307;&#x5B9A;zk&#x7684;&#x65F6;&#x5019;
+      &lt;property&gt;
+          &lt;!-- &#x6307;&#x5B9A;zookeeper&#x6240;&#x5728;&#x7684;&#x8282;&#x70B9; --&gt;
+          &lt;name&gt;ha.zookeeper.quorum&lt;/name&gt;
+          &lt;value&gt;node2:2181,node3:2181,node4:2181&lt;/value&gt;
+      &lt;/property&gt;
+  --&gt;
+&lt;/configuration&gt;
+</code></pre></li>
+</ul>
+</li>
+<li>yarn-site.xml<ul>
+<li><pre><code>&lt;configuration&gt;
+  &lt;property&gt;
+      &lt;name&gt;yarn.nodemanager.aux-services&lt;/name&gt;
+      &lt;value&gt;mapreduce_shuffle&lt;/value&gt;
+  &lt;/property&gt;
+  &lt;property&gt;
+      &lt;name&gt;yarn.nodemanager.vmem-check-enabled&lt;/name&gt;
+      &lt;value&gt;false&lt;/value&gt;
+  &lt;/property&gt;
+&lt;/configuration&gt;
+</code></pre></li>
+</ul>
+</li>
+<li>mapred-site.xml<ul>
+<li><pre><code>&lt;configuration&gt;
+  &lt;property&gt;
+      &lt;name&gt;mapreduce.framework.name&lt;/name&gt;
+      &lt;value&gt;yarn&lt;/value&gt;
+  &lt;/property&gt;
+  &lt;!-- &#x53EF;&#x9009;
+      &lt;property&gt;
+          &lt;name&gt;yarn.app.mapreduce.am.env&lt;/name&gt;
+          &lt;value&gt;HADOOP_MAPRED_HOME=${HADDOP_HOME}&lt;/value&gt;
+      &lt;/property&gt;
+      &lt;property&gt;
+          &lt;name&gt;mapreduce.map.env&lt;/name&gt;
+          &lt;value&gt;HADOOP_MAPRED_HOME=${HADDOP_HOME}&lt;/value&gt;
+      &lt;/property&gt;
+      &lt;property&gt;
+          &lt;name&gt;mapreduce.reduce.env&lt;/name&gt;
+          &lt;value&gt;HADOOP_MAPRED_HOME=${HADDOP_HOME}&lt;/value&gt;
+      &lt;/property&gt;
+  --&gt;
+&lt;/configuration&gt;
+</code></pre></li>
+</ul>
+</li>
+<li>hadoop-env.sh<ul>
+<li><pre><code>exprot JAVA_HOME = ${JAVA_HOME}
+export HADOOP_HOME = ${HADDOP_HOME}
+</code></pre></li>
+</ul>
+</li>
+<li>workers<ul>
+<li><pre><code>node2
+node3
+node4
+</code></pre></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>&#x5C06;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x590D;&#x5236;&#x5230;&#x5176;&#x4ED6;&#x673A;&#x5668;</p>
+<ul>
+<li>scp hadoop/etc/hadoop/* node-xxx:/usr/local/hadoop/etc/hadoop/</li>
+</ul>
+</li>
+<li><p>&#x542F;&#x52A8;</p>
+<ul>
+<li>&#x5148;&#x542F;&#x52A8;zookeeper&#xFF08;&#x53EF;&#x9009;&#xFF09;<ul>
+<li><code>zkServer.sh start</code></li>
+</ul>
+</li>
+<li>&#x5728;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;namenode&#x4E0A;&#x683C;&#x5F0F;&#x5316;zookeeper&#xFF08;&#x53EF;&#x9009;&#xFF09;<ul>
+<li><code>hdfs zkfc -formatZK</code></li>
+</ul>
+</li>
+<li>&#x542F;&#x52A8;journalnode,&#x9700;&#x8981;&#x542F;&#x52A8;&#x6240;&#x6709;&#x8282;&#x70B9;&#x7684;journalnode&#xFF08;&#x53EF;&#x9009;&#xFF09;<ul>
+<li><code>hdfs --daemon start journalnode</code></li>
+</ul>
+</li>
+<li>&#x683C;&#x5F0F;&#x5316;namenode<pre><code>  hdfs namenode -format 
+  # &#x5982;&#x679C;&#x6709;&#x591A;&#x4E2A;namenode&#x540D;&#x79F0;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;  hdfs namenode -format xxx &#x6307;&#x5B9A;
+</code></pre></li>
+<li>&#x542F;&#x52A8;namenode&#xFF08;&#x53EF;&#x9009;&#xFF09;<pre><code>  hdfs --daemon start namenode
+</code></pre></li>
+<li>&#x5176;&#x4ED6;namenode&#x540C;&#x6B65;&#xFF08;&#x53EF;&#x9009;&#xFF09;<ul>
+<li>&#x5982;&#x679C;&#x662F;&#x4F7F;&#x7528;&#x9AD8;&#x53EF;&#x7528;&#x65B9;&#x5F0F;&#x914D;&#x7F6E;&#x7684;namenode&#xFF0C;&#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x547D;&#x4EE4;&#x540C;&#x6B65;(&#x9700;&#x8981;&#x540C;&#x6B65;&#x7684;namenode&#x6267;&#x884C;).<pre><code>hdfs namenode -bootstrapStandby
+</code></pre></li>
+<li>&#x5982;&#x679C;&#x4E0D;&#x662F;&#x4F7F;&#x7528;&#x9AD8;&#x53EF;&#x7528;&#x65B9;&#x5F0F;&#x914D;&#x7F6E;&#x7684;namenode&#xFF0C;&#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x547D;&#x4EE4;&#x540C;&#x6B65;<pre><code>hdfs namenode -initializeSharedEdits
+</code></pre></li>
+</ul>
+</li>
+<li>&#x542F;&#x52A8;hdfs<pre><code>sbin/start-dfs.sh
+</code></pre></li>
+</ul>
+</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="question1.html" class="navigation navigation-prev " aria-label="Previous page: 部署准备">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="question2.html" class="navigation navigation-next " aria-label="Next page: 部署常见错误">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"hadoop 部署","level":"1.2.2","depth":2,"next":{"title":"部署常见错误","level":"1.2.3","depth":2,"path":"bigdata/question2.md","ref":"bigdata/question2.md","articles":[]},"previous":{"title":"部署准备","level":"1.2.1","depth":2,"path":"bigdata/question1.md","ref":"bigdata/question1.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"bigdata/hadoop_install.md","mtime":"2019-10-14T09:48:49.724Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-16T06:45:53.827Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

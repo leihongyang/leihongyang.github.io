@@ -1,0 +1,840 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>部署准备 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="hadoop_install.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    首页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    大数据
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.1" data-path="question1.html">
+            
+                <a href="question1.html">
+            
+                    
+                    部署准备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="hadoop_install.html">
+            
+                <a href="hadoop_install.html">
+            
+                    
+                    hadoop 部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="question2.html">
+            
+                <a href="question2.html">
+            
+                    
+                    部署常见错误
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="hive.html">
+            
+                <a href="hive.html">
+            
+                    
+                    hive
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="hdfs.html">
+            
+                <a href="hdfs.html">
+            
+                    
+                    hdfs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="hbase.html">
+            
+                <a href="hbase.html">
+            
+                    
+                    hbase
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="spark.html">
+            
+                <a href="spark.html">
+            
+                    
+                    spark
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="rdd.html">
+            
+                <a href="rdd.html">
+            
+                    
+                    rdd操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../java/">
+            
+                <a href="../java/">
+            
+                    
+                    JAVA
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../java/question1.html">
+            
+                <a href="../java/question1.html">
+            
+                    
+                    一个最基本的服务器开发配置模板
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../python/">
+            
+                <a href="../python/">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../python/question1.html">
+            
+                <a href="../python/question1.html">
+            
+                    
+                    Python的函数参数传递方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../python/question2.html">
+            
+                <a href="../python/question2.html">
+            
+                    
+                    @staticmethod和@classmethod的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../k8s/">
+            
+                <a href="../k8s/">
+            
+                    
+                    K8S
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../k8s/question1.html">
+            
+                <a href="../k8s/question1.html">
+            
+                    
+                    k8s安装部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../k8s/question2.html">
+            
+                <a href="../k8s/question2.html">
+            
+                    
+                    k8s常见FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../db/">
+            
+                <a href="../db/">
+            
+                    
+                    数据库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../db/question1.html">
+            
+                <a href="../db/question1.html">
+            
+                    
+                    设置Mysql存储中文
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../ml/">
+            
+                <a href="../ml/">
+            
+                    
+                    机器学习
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../ml/question3.html">
+            
+                <a href="../ml/question3.html">
+            
+                    
+                    一些知识点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../ml/question1.html">
+            
+                <a href="../ml/question1.html">
+            
+                    
+                    过拟合和欠拟合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../ml/question2.html">
+            
+                <a href="../ml/question2.html">
+            
+                    
+                    机器学习流行算法一览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../ml/question4.html">
+            
+                <a href="../ml/question4.html">
+            
+                    
+                    异构计算
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../keycloak/">
+            
+                <a href="../keycloak/">
+            
+                    
+                    Keycloak
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../keycloak/keycloak-java.html">
+            
+                <a href="../keycloak/keycloak-java.html">
+            
+                    
+                    用户统一鉴权服务-适配器使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../keycloak/keycloak-devp.html">
+            
+                <a href="../keycloak/keycloak-devp.html">
+            
+                    
+                    KEYCLOAK 配置文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../idea/">
+            
+                <a href="../idea/">
+            
+                    
+                    IDEA
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../idea/go.html">
+            
+                <a href="../idea/go.html">
+            
+                    
+                    IDEA 无法添加GO SDK的问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../pmp/">
+            
+                <a href="../pmp/">
+            
+                    
+                    PMP相关
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../pmp/pmp.html">
+            
+                <a href="../pmp/pmp.html">
+            
+                    
+                    一张PMP技能图
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../virtual/">
+            
+                <a href="../virtual/">
+            
+                    
+                    虚拟化
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../virtual/question1.html">
+            
+                <a href="../virtual/question1.html">
+            
+                    
+                    docker容器相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../md/">
+            
+                <a href="../md/">
+            
+                    
+                    Markdown
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../md/question1.html">
+            
+                <a href="../md/question1.html">
+            
+                    
+                    Markdown标记语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../other/">
+            
+                <a href="../other/">
+            
+                    
+                    杂项
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../other/question1.html">
+            
+                <a href="../other/question1.html">
+            
+                    
+                    git如何修改已提交的commit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../other/question2.html">
+            
+                <a href="../other/question2.html">
+            
+                    
+                    apidoc 教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >部署准备</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x642D;&#x5EFA;&#x76F8;&#x5173;&#x53CA;&#x5404;&#x7EC4;&#x4EF6;&#x7528;&#x9014;&#x548C;&#x5173;&#x7CFB;">&#x642D;&#x5EFA;&#x76F8;&#x5173;&#x53CA;&#x5404;&#x7EC4;&#x4EF6;&#x7528;&#x9014;&#x548C;&#x5173;&#x7CFB;</h1>
+<ol>
+<li><p>&#x4E3B;&#x8981;&#x7248;&#x672C;&#x8FED;&#x4EE3;  </p>
+<ul>
+<li><p>Hadoop 3.x&#x4E3B;&#x8981;&#x53D8;&#x5316;(&#x76F8;&#x5BF9;&#x4E8E;Hadoop 2.x)<br><a href="https://blog.csdn.net/qq_39657909/article/details/84781620" target="_blank">https://blog.csdn.net/qq_39657909/article/details/84781620</a></p>
+</li>
+<li><p>Spark1.x&#x548C;Spark2.x&#x7684;&#x533A;&#x522B;  </p>
+<ul>
+<li>DataFrame&#x4E0E;Dataset &#x7EDF;&#x4E00;&#x5316;&#x4E86;&#xFF0C;&#x53EA;&#x5269;&#x4E0B;DataSet&#x4E86;</li>
+<li>flatMapToPair &#x7531;reture list&#x53D8;&#x4E3A;reture  iterator</li>
+<li>ForeachRDD &#x4E0D;&#x518D;return null</li>
+<li>&#x66F4;&#x65B0;&#x72B6;&#x6001;&#x7684;&#x51FD;&#x6570;&#x4E2D;,&#x4F7F;&#x7528;&#x7684;Optional&#x6765;&#x81EA;com.google.common.base&#xFF0C;&#x51FD;&#x6570;&#x4E0D;&#x80FD;&#x7528;</li>
+<li>Spark streaming &#x4E2D;JavaStreamingContextFactory&#x7C7B; &#x5E9F;&#x5F03;</li>
+<li>Kafka &#x53EA;&#x63D0;&#x4F9B;direct&#x65B9;&#x5F0F; </li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>&#x7EC4;&#x4EF6;&#x5206;&#x7C7B;</p>
+<ul>
+<li>&#x6570;&#x636E;&#x63A5;&#x5165;&#x5E38;&#x7528;&#x7684;&#x5DE5;&#x5177;&#x6709;kafka, Flume, Logstash, NDC&#xFF08;&#x7F51;&#x6613;&#x6570;&#x636E;&#x8FD0;&#x6CB3;&#x7CFB;&#x7EDF;&#xFF09;, Sqoop</li>
+<li>&#x6570;&#x636E;&#x9884;&#x5904;&#x7406;: HiveSQL&#xFF0C;SparkSQL&#x548C;Impala&#x7B49;</li>
+<li>&#x6570;&#x636E;&#x5B58;&#x50A8;: hdfs, hbase, hive, tachyon</li>
+<li>&#x6570;&#x636E;&#x7684;&#x53EF;&#x89C6;&#x5316;&#x4EE5;&#x53CA;&#x8F93;&#x51FA;API: &#x5BF9;&#x4E8E;&#x5904;&#x7406;&#x5F97;&#x5230;&#x7684;&#x6570;&#x636E;&#x53EF;&#x4EE5;&#x5BF9;&#x63A5;&#x4E3B;&#x6D41;&#x7684;BI&#x7CFB;&#x7EDF;&#xFF0C;&#x6BD4;&#x5982;&#x56FD;&#x5916;&#x7684;Tableau&#x3001;Qlikview&#x3001;PowrerBI&#x7B49;&#xFF0C;&#x56FD;&#x5185;&#x7684;SmallBI&#x548C;&#x65B0;&#x5174;&#x7684;&#x7F51;&#x6613;&#x6709;&#x6570;&#x7B49;&#xFF0C;&#x5C06;&#x7ED3;&#x679C;&#x8FDB;&#x884C;&#x53EF;&#x89C6;&#x5316;&#xFF0C;&#x7528;&#x4E8E;&#x51B3;&#x7B56;&#x5206;&#x6790;&#xFF1B;&#x6216;&#x8005;&#x56DE;&#x6D41;&#x5230;&#x7EBF;&#x4E0A;&#xFF0C;&#x652F;&#x6301;&#x7EBF;&#x4E0A;&#x4E1A;&#x52A1;&#x7684;&#x53D1;&#x5C55;&#x3002;</li>
+</ul>
+</li>
+<li><p>&#x7EC4;&#x4EF6;&#x4ECB;&#x7ECD;</p>
+<ul>
+<li><p>Impala&#x80FD;&#x67E5;&#x8BE2;&#x5B58;&#x50A8;&#x5728;Hadoop&#x7684;HDFS&#x548C;HBase&#x4E2D;&#x7684;PB&#x7EA7;&#x5927;&#x6570;&#x636E;&#x3002;&#x7531;&#x4E8E;Hive&#x5E95;&#x5C42;&#x6267;&#x884C;&#x4F7F;&#x7528;&#x7684;&#x662F;MapReduce&#x5F15;&#x64CE;&#xFF0C;&#x4ECD;&#x7136;&#x662F;&#x4E00;&#x4E2A;&#x6279;&#x5904;&#x7406;&#x8FC7;&#x7A0B;&#xFF0C;&#x96BE;&#x4EE5;&#x6EE1;&#x8DB3;&#x67E5;&#x8BE2;&#x7684;&#x4EA4;&#x4E92;&#x6027;&#x3002;Hive&#x9002;&#x5408;&#x4E8E;&#x957F;&#x65F6;&#x95F4;&#x7684;&#x6279;&#x5904;&#x7406;&#x67E5;&#x8BE2;&#x5206;&#x6790;&#xFF0C;&#x800C;Impala&#x9002;&#x5408;&#x4E8E;&#x5B9E;&#x65F6;&#x4EA4;&#x4E92;&#x5F0F;SQL&#x67E5;&#x8BE2;&#x3002;<br><a href="https://www.cnblogs.com/zlslch/p/6785207.html" target="_blank">https://www.cnblogs.com/zlslch/p/6785207.html</a></p>
+</li>
+<li><p>Pig&#x662F;&#x4E00;&#x4E2A;&#x57FA;&#x4E8E;Hadoop&#x7684;&#x5927;&#x6570;&#x636E;&#x5206;&#x6790;&#x5E73;&#x53F0;&#xFF0C;&#x5B83;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x53EB;PigLatin&#x7684;&#x9AD8;&#x7EA7;&#x8BED;&#x8A00;&#x6765;&#x8868;&#x8FBE;&#x5927;&#x6570;&#x636E;&#x5206;&#x6790;&#x7A0B;&#x5E8F;&#xFF0C;&#x5C06;&#x811A;&#x672C;&#x8F6C;&#x6362;&#x4E3A;MapReduce&#x4EFB;&#x52A1;&#x5728;Hadoop&#x4E0A;&#x6267;&#x884C;&#x3002;&#x901A;&#x5E38;&#x7528;&#x4E8E;&#x8FDB;&#x884C;&#x79BB;&#x7EBF;&#x5206;&#x6790;&#x3002;</p>
+</li>
+<li><p><em>Sqoop&#x6570;&#x636E;&#x540C;&#x6B65;&#x5DE5;&#x5177;&#xFF0C;SQL-to-Hadoop&#x7684;&#x7F29;&#x5199;&#x3002;Sqoop&#x662F;&#x4E00;&#x4E2A;Hadoop&#x548C;&#x5173;&#x7CFB;&#x578B;&#x6570;&#x636E;&#x5E93;&#x4E4B;&#x95F4;&#x7684;&#x6570;&#x636E;&#x8F6C;&#x79FB;&#x5DE5;&#x5177;&#x3002;&#x53EF;&#x5C06;&#x5173;&#x7CFB;&#x578B;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x7684;&#x6570;&#x636E;&#x5BFC;&#x5165;&#x5230;Hadoop&#x7684;HDFS&#x4E2D;&#xFF0C;&#x4E5F;&#x53EF;&#x5C06;HDFS&#x4E2D;&#x7684;&#x6570;&#x636E;&#x5BFC;&#x8FDB;&#x5230;&#x5173;&#x7CFB;&#x578B;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x4F20;&#x7EDF;&#x6570;&#x636E;&#x5E93;&#x548C;Hadoop&#x4E4B;&#x524D;&#x4F20;&#x8F93;&#x6570;&#x636E;&#x3002;&#x6570;&#x636E;&#x7684;&#x5BFC;&#x5165;&#x548C;&#x5BFC;&#x51FA;&#x672C;&#x8D28;&#x4E0A;&#x662F;Mapreduce&#x7A0B;&#x5E8F;&#xFF0C;&#x5145;&#x5206;&#x5229;&#x7528;&#x4E86;MR&#x7684;&#x5E76;&#x884C;&#x5316;&#x548C;&#x5BB9;&#x9519;&#x6027;&#x3002;</em></p>
+</li>
+<li><p>Flume&#x65E5;&#x5FD7;&#x6536;&#x96C6;&#x5DE5;&#x5177;&#xFF0C;Cloudera&#x5F00;&#x6E90;&#x7684;&#x65E5;&#x5FD7;&#x6536;&#x96C6;&#x7CFB;&#x7EDF;&#xFF0C;&#x5177;&#x6709;&#x5206;&#x5E03;&#x5F0F;&#x3001;&#x9AD8;&#x53EF;&#x9760;&#x3001;&#x9AD8;&#x5BB9;&#x9519;&#x3001;&#x6613;&#x4E8E;&#x5B9A;&#x5236;&#x548C;&#x6269;&#x5C55;&#x7684;&#x7279;&#x70B9;&#x3002;&#x5B83;&#x5C06;&#x6570;&#x636E;&#x4ECE;&#x4EA7;&#x751F;&#x3001;&#x4F20;&#x8F93;&#x3001;&#x5904;&#x7406;&#x5E76;&#x6700;&#x7EC8;&#x5199;&#x5165;&#x76EE;&#x6807;&#x7684;&#x8DEF;&#x5F84;&#x7684;&#x8FC7;&#x7A0B;&#x62BD;&#x8C61;&#x4E3A;&#x6570;&#x636E;&#x6D41;&#xFF0C;&#x5728;&#x5177;&#x4F53;&#x7684;&#x6570;&#x636E;&#x6D41;&#x4E2D;&#xFF0C;&#x6570;&#x636E;&#x6E90;&#x652F;&#x6301;&#x5728;Flume&#x4E2D;&#x5B9A;&#x5236;&#x6570;&#x636E;&#x53D1;&#x9001;&#x65B9;&#xFF0C;&#x4ECE;&#x800C;&#x652F;&#x6301;&#x6536;&#x96C6;&#x5404;&#x79CD;&#x4E0D;&#x540C;&#x534F;&#x8BAE;&#x6570;&#x636E;&#x3002;&#x540C;&#x65F6;&#xFF0C;Flume&#x6570;&#x636E;&#x6D41;&#x63D0;&#x4F9B;&#x5BF9;&#x65E5;&#x5FD7;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x7B80;&#x5355;&#x5904;&#x7406;&#x7684;&#x80FD;&#x529B;&#xFF0C;&#x5982;&#x8FC7;&#x6EE4;&#x3001;&#x683C;&#x5F0F;&#x8F6C;&#x6362;&#x7B49;&#x3002;&#x6B64;&#x5916;&#xFF0C;Flume&#x8FD8;&#x5177;&#x6709;&#x80FD;&#x591F;&#x5C06;&#x65E5;&#x5FD7;&#x5199;&#x5F80;&#x5404;&#x79CD;&#x6570;&#x636E;&#x76EE;&#x6807;&#xFF08;&#x53EF;&#x5B9A;&#x5236;&#xFF09;&#x7684;&#x80FD;&#x529B;&#x3002;&#x603B;&#x7684;&#x6765;&#x8BF4;&#xFF0C;Flume&#x662F;&#x4E00;&#x4E2A;&#x53EF;&#x6269;&#x5C55;&#x3001;&#x9002;&#x5408;&#x590D;&#x6742;&#x73AF;&#x5883;&#x7684;&#x6D77;&#x91CF;&#x65E5;&#x5FD7;&#x6536;&#x96C6;&#x7CFB;&#x7EDF;&#x3002;</p>
+</li>
+<li><p><em>Ambari&#x662F;&#x4E00;&#x4E2A;&#x5BF9;Hadoop&#x96C6;&#x7FA4;&#x8FDB;&#x884C;&#x76D1;&#x63A7;&#x548C;&#x7BA1;&#x7406;&#x7684;&#x57FA;&#x4E8E;Web&#x7684;&#x7CFB;&#x7EDF;&#x3002;&#x76EE;&#x524D;&#x5DF2;&#x7ECF;&#x652F;&#x6301;HDFS&#xFF0C;MapReduce&#xFF0C;Hive&#xFF0C;HCatalog&#xFF0C;HBase&#xFF0C;ZooKeeper&#xFF0C;Oozie&#xFF0C;Pig&#x548C;Sqoop&#x7B49;&#x7EC4;&#x4EF6;&#x3002;</em></p>
+</li>
+</ul>
+</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 大数据">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="hadoop_install.html" class="navigation navigation-next " aria-label="Next page: hadoop 部署">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"部署准备","level":"1.2.1","depth":2,"next":{"title":"hadoop 部署","level":"1.2.2","depth":2,"path":"bigdata/hadoop_install.md","ref":"bigdata/hadoop_install.md","articles":[]},"previous":{"title":"大数据","level":"1.2","depth":1,"path":"bigdata/README.md","ref":"bigdata/README.md","articles":[{"title":"部署准备","level":"1.2.1","depth":2,"path":"bigdata/question1.md","ref":"bigdata/question1.md","articles":[]},{"title":"hadoop 部署","level":"1.2.2","depth":2,"path":"bigdata/hadoop_install.md","ref":"bigdata/hadoop_install.md","articles":[]},{"title":"部署常见错误","level":"1.2.3","depth":2,"path":"bigdata/question2.md","ref":"bigdata/question2.md","articles":[]},{"title":"hive","level":"1.2.4","depth":2,"path":"bigdata/hive.md","ref":"bigdata/hive.md","articles":[]},{"title":"hdfs","level":"1.2.5","depth":2,"path":"bigdata/hdfs.md","ref":"bigdata/hdfs.md","articles":[]},{"title":"hbase","level":"1.2.6","depth":2,"path":"bigdata/hbase.md","ref":"bigdata/hbase.md","articles":[]},{"title":"spark","level":"1.2.7","depth":2,"path":"bigdata/spark.md","ref":"bigdata/spark.md","articles":[]},{"title":"rdd操作","level":"1.2.8","depth":2,"path":"bigdata/rdd.md","ref":"bigdata/rdd.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"bigdata/question1.md","mtime":"2019-10-14T07:28:18.285Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-16T06:45:53.827Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

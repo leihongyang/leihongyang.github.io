@@ -1,0 +1,854 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>KEYCLOAK 配置文档 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../idea/" />
+    
+    
+    <link rel="prev" href="keycloak-java.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    首页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../bigdata/">
+            
+                <a href="../bigdata/">
+            
+                    
+                    大数据
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../bigdata/question1.html">
+            
+                <a href="../bigdata/question1.html">
+            
+                    
+                    部署准备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../bigdata/hadoop_install.html">
+            
+                <a href="../bigdata/hadoop_install.html">
+            
+                    
+                    hadoop 部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../bigdata/question2.html">
+            
+                <a href="../bigdata/question2.html">
+            
+                    
+                    部署常见错误
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../bigdata/hive.html">
+            
+                <a href="../bigdata/hive.html">
+            
+                    
+                    hive
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../bigdata/hdfs.html">
+            
+                <a href="../bigdata/hdfs.html">
+            
+                    
+                    hdfs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../bigdata/hbase.html">
+            
+                <a href="../bigdata/hbase.html">
+            
+                    
+                    hbase
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../bigdata/spark.html">
+            
+                <a href="../bigdata/spark.html">
+            
+                    
+                    spark
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../bigdata/rdd.html">
+            
+                <a href="../bigdata/rdd.html">
+            
+                    
+                    rdd操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../java/">
+            
+                <a href="../java/">
+            
+                    
+                    JAVA
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../java/question1.html">
+            
+                <a href="../java/question1.html">
+            
+                    
+                    一个最基本的服务器开发配置模板
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../python/">
+            
+                <a href="../python/">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../python/question1.html">
+            
+                <a href="../python/question1.html">
+            
+                    
+                    Python的函数参数传递方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../python/question2.html">
+            
+                <a href="../python/question2.html">
+            
+                    
+                    @staticmethod和@classmethod的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../k8s/">
+            
+                <a href="../k8s/">
+            
+                    
+                    K8S
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../k8s/question1.html">
+            
+                <a href="../k8s/question1.html">
+            
+                    
+                    k8s安装部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../k8s/question2.html">
+            
+                <a href="../k8s/question2.html">
+            
+                    
+                    k8s常见FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../db/">
+            
+                <a href="../db/">
+            
+                    
+                    数据库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../db/question1.html">
+            
+                <a href="../db/question1.html">
+            
+                    
+                    设置Mysql存储中文
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../ml/">
+            
+                <a href="../ml/">
+            
+                    
+                    机器学习
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../ml/question3.html">
+            
+                <a href="../ml/question3.html">
+            
+                    
+                    一些知识点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../ml/question1.html">
+            
+                <a href="../ml/question1.html">
+            
+                    
+                    过拟合和欠拟合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../ml/question2.html">
+            
+                <a href="../ml/question2.html">
+            
+                    
+                    机器学习流行算法一览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../ml/question4.html">
+            
+                <a href="../ml/question4.html">
+            
+                    
+                    异构计算
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Keycloak
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="keycloak-java.html">
+            
+                <a href="keycloak-java.html">
+            
+                    
+                    用户统一鉴权服务-适配器使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.8.2" data-path="keycloak-devp.html">
+            
+                <a href="keycloak-devp.html">
+            
+                    
+                    KEYCLOAK 配置文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../idea/">
+            
+                <a href="../idea/">
+            
+                    
+                    IDEA
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../idea/go.html">
+            
+                <a href="../idea/go.html">
+            
+                    
+                    IDEA 无法添加GO SDK的问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../pmp/">
+            
+                <a href="../pmp/">
+            
+                    
+                    PMP相关
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../pmp/pmp.html">
+            
+                <a href="../pmp/pmp.html">
+            
+                    
+                    一张PMP技能图
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../virtual/">
+            
+                <a href="../virtual/">
+            
+                    
+                    虚拟化
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../virtual/question1.html">
+            
+                <a href="../virtual/question1.html">
+            
+                    
+                    docker容器相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../md/">
+            
+                <a href="../md/">
+            
+                    
+                    Markdown
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../md/question1.html">
+            
+                <a href="../md/question1.html">
+            
+                    
+                    Markdown标记语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../other/">
+            
+                <a href="../other/">
+            
+                    
+                    杂项
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../other/question1.html">
+            
+                <a href="../other/question1.html">
+            
+                    
+                    git如何修改已提交的commit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../other/question2.html">
+            
+                <a href="../other/question2.html">
+            
+                    
+                    apidoc 教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >KEYCLOAK 配置文档</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="keycloak-&#x914D;&#x7F6E;&#x6587;&#x6863;">KEYCLOAK &#x914D;&#x7F6E;&#x6587;&#x6863;</h1>
+<h3 id="1&#x521B;&#x5EFA;realm">1.&#x521B;&#x5EFA;REALM</h3>
+<p><img src="create_realm.png" alt="alt text"></p>
+<h3 id="2&#x914D;&#x7F6E;client">2.&#x914D;&#x7F6E;CLIENT</h3>
+<p>&#x5C06;localhost&#x548C;&#x7AEF;&#x53E3;&#x6362;&#x6210;&#x76F8;&#x5E94;&#x7684;&#x5E94;&#x7528;&#x670D;&#x52A1;&#x5668;&#x5730;&#x5740;&#x548C;&#x7AEF;&#x53E3;&#x5373;&#x53EF;&#xFF0C;&#x5176;&#x4ED6;&#x4FDD;&#x6301;&#x4E00;&#x81F4;
+&#x521B;&#x5EFA;&#x4E09;&#x4E2A;&#x89D2;&#x8272;&#xFF0C;login&#xFF0C;admin&#x548C;user
+&#x521B;&#x5EFA;&#x4E24;&#x4E2A;&#x7528;&#x6237;lhy&#x548C;lei&#x5206;&#x522B;&#x8D4B;&#x4E88;admin&#x548C;user&#x89D2;&#x8272;
+<img src="clientconf.png" alt="alt text"></p>
+<h3 id="3&#x67E5;&#x770B;secret">3.&#x67E5;&#x770B;SECRET</h3>
+<p><img src="secret.png" alt="alt text"></p>
+<h3 id="4&#x5728;spring&#x914D;&#x7F6E;&#x6587;&#x4EF6;applicationproperties&#x4E2D;&#x5199;&#x5165;&#x4EE5;&#x4E0B;&#x914D;&#x7F6E;">4.&#x5728;SPRING&#x914D;&#x7F6E;&#x6587;&#x4EF6;APPLICATION.PROPERTIES&#x4E2D;&#x5199;&#x5165;&#x4EE5;&#x4E0B;&#x914D;&#x7F6E;</h3>
+<pre><code># realm&#x540D;&#x79F0;
+keycloak.realm=lhy-test
+
+# keycloak&#x5B89;&#x88C5;&#x670D;&#x52A1;&#x5668;&#x7684;IP&#x548C;&#x7AEF;&#x53E3;
+keycloak.auth-server-url=http://192.168.110.45:8180/auth
+
+keycloak.ssl-required=external
+
+# clientID&#x540D;&#x79F0;
+keycloak.resource=test
+
+keycloak.public-client=false
+
+# keycloak client &#x52A0;&#x5BC6;&#x5B57;&#x6BB5;&#xFF0C;&#x83B7;&#x53D6;&#x65B9;&#x5F0F;&#x89C1;&#x56FE;3
+keycloak.credentials.secret=e57d2022-9e67-48db-8507-ca2ccf78cf18
+
+# &#x7ED9;&#x4E88;&#x6240;&#x6709;&#x8D44;&#x6E90;&#x8BBF;&#x95EE;&#x5FC5;&#x987B;&#x8981;&#x6709;&#x767B;&#x5F55;&#x89D2;&#x8272;&#x7684;&#x6743;&#x9650;
+keycloak.securityConstraints[0].authRoles[0] = login
+keycloak.securityConstraints[0].securityCollections[0].patterns[0] = /*
+# &#x6B64;&#x884C;&#x914D;&#x7F6E;&#x5FC5;&#x987B;&#x52A0;*&#x53F7;
+</code></pre><h3 id="5&#x9879;&#x76EE;&#x793A;&#x4F8B;">5.&#x9879;&#x76EE;&#x793A;&#x4F8B;</h3>
+<pre><code>&#x9879;&#x76EE;&#x5730;&#x5740;&#xFF1A;https://github.com/leihongyang/keycloak-spring-boot-demo.git
+&#x9700;&#x8981;&#x5C06;application.properties&#x6587;&#x4EF6;&#x5185;&#x5BB9;&#x66FF;&#x6362;&#x4E3A;&#x9700;&#x8981;&#x7684;&#x5185;&#x5BB9;
+&#x8BBF;&#x95EE;Web&#x670D;&#x52A1;&#x5730;&#x5740;&#xFF0C;&#x9700;&#x8981;&#x767B;&#x5F55;&#xFF0C;&#x8F93;&#x5165;&#x5E26;&#x6709;login&#x89D2;&#x8272;&#x7684;&#x7528;&#x6237;&#x80FD;&#x591F;&#x767B;&#x5F55;&#x3002;&#x82E5;&#x8BE5;&#x7528;&#x6237;&#x62E5;&#x6709;admin&#x89D2;&#x8272;&#x5C31;&#x80FD;&#x8BBF;&#x95EE;&#x7BA1;&#x7406;&#x5458;&#x5165;&#x53E3;&#xFF0C;&#x62E5;&#x6709;user&#x89D2;&#x8272;&#x80FD;&#x8BBF;&#x95EE;&#x7528;&#x6237;&#x5165;&#x53E3;&#x3002;
+
+&#x7A0B;&#x5E8F;&#x8BE6;&#x89E3;&#xFF1A;&#xFF08;&#x73AF;&#x5883;java1.8&#xFF0C;maven3&#xFF09;
+        1.&#x5F15;&#x5165;keycloak-spring&#x4F9D;&#x8D56;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.keycloak&lt;/groupId&gt;
+            &lt;artifactId&gt;keycloak-spring-boot-starter&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        2.&#x5F15;&#x5165;keycloak-adapter
+        &lt;dependencyManagement&gt;
+            &lt;dependencies&gt;
+                &lt;dependency&gt;
+                    &lt;groupId&gt;org.keycloak.bom&lt;/groupId&gt;
+                    &lt;artifactId&gt;keycloak-adapter-bom&lt;/artifactId&gt;
+                    &lt;version&gt;${keycloak.version}&lt;/version&gt;
+                    &lt;type&gt;pom&lt;/type&gt;
+                    &lt;scope&gt;import&lt;/scope&gt;
+                &lt;/dependency&gt;
+            &lt;/dependencies&gt;
+            &lt;/dependencyManagement&gt;
+        3.&#x53C2;&#x7167;&#x7B2C;4&#x8282;&#x914D;&#x7F6E;spring&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x81F3;&#x6B64;&#x7A0B;&#x5E8F;&#x5DF2;&#x7ECF;&#x4EA4;&#x7ED9;keycloak&#x7BA1;&#x7406;&#x4E86;&#x3002;&#x5176;&#x4F59;&#x8BE6;&#x89E3;&#x89C1;demo&#x6CE8;&#x91CA;
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="keycloak-java.html" class="navigation navigation-prev " aria-label="Previous page: 用户统一鉴权服务-适配器使用">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../idea/" class="navigation navigation-next " aria-label="Next page: IDEA">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"KEYCLOAK 配置文档","level":"1.8.2","depth":2,"next":{"title":"IDEA","level":"1.9","depth":1,"path":"idea/README.md","ref":"idea/README.md","articles":[{"title":"IDEA 无法添加GO SDK的问题","level":"1.9.1","depth":2,"path":"idea/go.md","ref":"idea/go.md","articles":[]}]},"previous":{"title":"用户统一鉴权服务-适配器使用","level":"1.8.1","depth":2,"path":"keycloak/keycloak-java.md","ref":"keycloak/keycloak-java.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"keycloak/keycloak-devp.md","mtime":"2019-08-23T10:04:21.783Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-16T06:45:53.827Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
