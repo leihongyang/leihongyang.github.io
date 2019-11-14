@@ -16,6 +16,6 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@master
       env:
         ACCESS_TOKEN: ${{ secrets.test }}
-        BRANCH: master
-        FOLDER: .
-        BUILD_SCRIPT: gitbook build . docs
+        BRANCH: gh-pages
+        FOLDER: docs
+        BUILD_SCRIPT: gitbook build ./ docs
