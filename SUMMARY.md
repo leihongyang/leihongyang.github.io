@@ -5,6 +5,7 @@
 1. [大数据](bigdata/README.md)
     * [部署准备](bigdata/question1.md)
     * [hadoop 部署](bigdata/hadoop_install.md)
+    * [CDH部署](bigdata/cdh.md)
     * [sqoop](bigdata/sqoop.md)
     * [部署常见错误](bigdata/question2.md)
     * [hive](bigdata/hive.md)
