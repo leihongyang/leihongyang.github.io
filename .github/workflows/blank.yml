@@ -3,19 +3,30 @@ name: CI
 on:
   push:
     branches:    
-      - test
+      - gh-pages
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
+    - name: Setup Node.js for use with actions
+      uses: actions/setup-node@v1.1.0
+
+    - name: Install gitbook
+      run: npm install -g gitbook-cli
+    
     - name: Checkout
-      uses: actions/checkout@master
+      uses: actions/checkout@v1
+      with:
+        ref: gh-pages
+    
+#     - name: Build
+#       run: gitbook build . docs
 
     - name: Build and Deploy
-      uses: JamesIves/github-pages-deploy-action@master
+      uses: leihongyang/github-pages-deploy-action@dev
       env:
         ACCESS_TOKEN: ${{ secrets.test }}
-        BRANCH: gh-pages
+        BRANCH: master
+        BASE_BRANCH: gh-pages
         FOLDER: docs
-        BUILD_SCRIPT: gitbook build ./ docs
