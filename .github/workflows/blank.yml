@@ -26,7 +26,7 @@ jobs:
     - name: Build and Deploy
       uses: leihongyang/github-pages-deploy-action@dev
       env:
-        ACCESS_TOKEN: ${{ secrets.test }}
+        GITHUB_TOKEN: e3c610346621820ccdd9d21ed5432986d64b3b3f
         BRANCH: master
         BASE_BRANCH: gh-pages
         FOLDER: docs
