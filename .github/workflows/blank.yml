@@ -26,7 +26,7 @@ jobs:
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v2
       env:
-        ACCESS_TOKEN: ${{ secrets.test }}
+        ACCESS_TOKEN: ${{ secrets.action_token }}
         BRANCH: master
         BASE_BRANCH: gh-pages
         FOLDER: docs
