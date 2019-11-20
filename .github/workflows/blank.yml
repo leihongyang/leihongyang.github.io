@@ -23,9 +23,10 @@ jobs:
     - name: Build
       run: gitbook build . docs
 
-    - name: Build and Deploy
-      uses: JamesIves/github-pages-deploy-action@3.0.0
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@releases/v2
       env:
         ACCESS_TOKEN: ${{ secrets.test }}
         BRANCH: master
+        BASE_BRANCH: gh-pages
         FOLDER: docs
