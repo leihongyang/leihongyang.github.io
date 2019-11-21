@@ -20,11 +20,15 @@ jobs:
       with:
         ref: gh-pages
     
+#     - name: git-bash
+#       uses: fnkr/github-action-git-bash@v1.1
+    
     - name: Build
       run: gitbook build . docs
 
     - name: Deploy
       run: |
+        git --version
         git config --global user.email "${GITHUB_ACTOR}"
         git config --global user.name "${GITHUB_ACTOR}"
         REPOSITORY_PATH="https://${ACCESS_TOKEN:-"x-access-token:$GITHUB_TOKEN"}@github.com/${GITHUB_REPOSITORY}.git"
