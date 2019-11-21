@@ -13,7 +13,7 @@ jobs:
       uses: actions/setup-node@v1.1.0
 
     - name: Install gitbook
-      run: npm install -g gitbook-cli
+      run: npm install -g gitbook-cli --registry=https://registry.npm.taobao.org
     
     - name: Checkout
       uses: actions/checkout@v1
@@ -24,9 +24,15 @@ jobs:
       run: gitbook build . docs
 
     - name: Deploy
-      uses: JamesIves/github-pages-deploy-action@releases/v2
+      run: |
+        git config --global user.email "${GITHUB_ACTOR}"
+        git config --global user.name "${GITHUB_ACTOR}"
+        REPOSITORY_PATH="https://${ACCESS_TOKEN:-"x-access-token:$GITHUB_TOKEN"}@github.com/${GITHUB_REPOSITORY}.git"
+        git add -f docs
+        git commit -m "Deploying to ${BRANCH} from ${BASE_BRANCH:-master} ${GITHUB_SHA}" --quiet
+        git push $REPOSITORY_PATH `git subtree split --prefix docs ${BASE_BRANCH:-master}`:$BRANCH --force
+      shell: bash
       env:
         ACCESS_TOKEN: ${{ secrets.action_token }}
         BRANCH: master
         BASE_BRANCH: gh-pages
-        FOLDER: docs
