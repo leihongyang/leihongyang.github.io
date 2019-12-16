@@ -7,6 +7,7 @@
     * [hadoop 部署](bigdata/hadoop_install.md)
     * [CDH部署](bigdata/cdh.md)
     * [sqoop](bigdata/sqoop.md)
+    * [flume](bigdata/flume.md)
     * [部署常见错误](bigdata/question2.md)
     * [hive](bigdata/hive.md)
     * [hdfs](bigdata/hdfs.md)
