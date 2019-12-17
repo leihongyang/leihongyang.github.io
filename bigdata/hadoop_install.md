@@ -82,6 +82,16 @@
                 <name>dfs.http.address</name>
                 <value>0.0.0.0:50070</value>
             </property>
+          <!--指定hdfs中namenode的存储位置-->
+          <property>
+               <name>dfs.namenode.name.dir</name> 
+               <value>file:/usr/hadoop/dfs/name</value>
+          </property>
+          <!--指定hdfs中datanode的存储位置-->
+          <property>
+               <name>dfs.datanode.data.dir</name>
+               <value>file:/usr/hadoop/dfs/data</value>
+          </property>
           </configuration>
           ```
     * core-site.xml
@@ -142,8 +152,8 @@
           ```
     * hadoop-env.sh
         * ```
-          exprot JAVA_HOME = ${JAVA_HOME}
-          export HADOOP_HOME = ${HADDOP_HOME}
+          export JAVA_HOME=${JAVA_HOME}
+          export HADOOP_HOME=${HADDOP_HOME}
           ```
     * workers
         * ```
@@ -184,3 +194,33 @@
       sbin/start-dfs.sh
       ```
 
+5. FAQ
+    * 使用root配置的hadoop并启动会出现报错
+        错误：
+        ```
+                Starting namenodes on [master]
+                ERROR: Attempting to operate on hdfs namenode as root
+               
+                ERROR: but there is no HDFS_NAMENODE_USER defined. Aborting operation.
+               
+                Starting datanodes
+                ERROR: Attempting to operate on hdfs datanode as root
+               
+                ERROR: but there is no HDFS_DATANODE_USER defined. Aborting operation.
+                Starting secondary namenodes [slave1]
+                ERROR: Attempting to operate on hdfs secondarynamenode as root
+                ERROR: but there is no HDFS_SECONDARYNAMENODE_USER defined. Aborting operation.
+        ```
+        解决方法：
+        ```
+                 在/hadoop/sbin路径下：
+                 将start-dfs.sh，stop-dfs.sh两个文件顶部添加以下参数
+                      HDFS_DATANODE_USER=root
+                      HADOOP_SECURE_DN_USER=hdfs
+                      HDFS_NAMENODE_USER=root
+                      HDFS_SECONDARYNAMENODE_USER=root
+                 start-yarn.sh，stop-yarn.sh顶部也需添加以下
+                    YARN_RESOURCEMANAGER_USER=root
+                    HADOOP_SECURE_DN_USER=yarn
+                    YARN_NODEMANAGER_USER=root
+        ```
