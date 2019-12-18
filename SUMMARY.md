@@ -54,3 +54,4 @@
 10. [杂项](other/README.md)
     * [git如何修改已提交的commit](other/question1.md)
     * [apidoc 教程](other/question2.md)
+    * [修改linux网卡名称](other/update_network_name.md)
