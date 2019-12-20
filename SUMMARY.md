@@ -21,6 +21,11 @@
 2. [Python](python/README.md)
     * [Python的函数参数传递方法](python/question1.md)
     * [@staticmethod和@classmethod的区别](python/question2.md)
+    
+3. [linux系统相关](linux/README.md)
+    * [修改linux网卡名称](linux/update_network_name.md)
+    * [用户操作](linux/user.md)
+    * [防火墙](linux/selinux.md)
 
 3. [K8S](k8s/README.md)
     * [k8s安装部署](k8s/question1.md)
@@ -54,4 +59,3 @@
 10. [杂项](other/README.md)
     * [git如何修改已提交的commit](other/question1.md)
     * [apidoc 教程](other/question2.md)
-    * [修改linux网卡名称](other/update_network_name.md)
