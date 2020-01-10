@@ -7,6 +7,7 @@
 1. [大数据](bigdata/README.md)
     * [部署准备](bigdata/question1.md)
     * [hadoop 部署](bigdata/hadoop_install.md)
+    * [hadoop 开发踩坑](bigdata/hadoop_devo.md)
     * [spark 部署](bigdata/spark2.md)
     * [CDH部署](bigdata/cdh.md)
     * [sqoop](bigdata/sqoop.md)
@@ -19,6 +20,7 @@
     * [rdd操作](bigdata/rdd.md)
 
 1. [JAVA](java/README.md)
+    * [Spring Boot](java/spring%20boot.md)
     * [一个最基本的服务器开发配置模板](java/question1.md)
 
 2. [Python](python/README.md)
@@ -49,6 +51,7 @@
     
 6. [IDEA](idea/README.md)
     * [IDEA 无法添加GO SDK的问题](idea/go.md)
+    * [idea激活](idea/register.md)
     
 7. [PMP相关](pmp/README.md)
     * [一张PMP技能图](pmp/pmp.md)
