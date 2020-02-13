@@ -137,6 +137,16 @@
                 <name>yarn.resourcemanager.resource-tracker.address</name>
                 <value>hadoop1:8031</value>
             </property>
+            <property>
+               <!--表示该节点服务器上yarn可以使用的虚拟CPU个数，默认是8，推荐将值配置与物理核心个数相同，如果节点CPU核心不足8个，要调小这个值，yarn不会智能的去检测物理核心数-->
+               <name>yarn.nodemanager.resource.cpu-vcores</name>
+               <value>2</value>
+            </property>
+            <property>
+               <!--设置该节点上yarn可使用的内存，默认为8G，如果节点内存资源不足8G，要减少这个值，yarn不会智能的去检测内存资源，一般这个设置yarn的可用内存资源（默认单位MB）-->
+               <name>yarn.nodemanager.resource.memory-mb</name>
+               <value>2048</value>
+            </property>
           </configuration>
           ```
     * mapred-site.xml
