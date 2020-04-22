@@ -1,0 +1,1177 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>spark 对于复杂JSON的处理 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="cdh.html" />
+    
+    
+    <link rel="prev" href="spark2.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    首页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="plain.html">
+            
+                <a href="plain.html">
+            
+                    
+                    计划学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    大数据
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="question1.html">
+            
+                <a href="question1.html">
+            
+                    
+                    部署准备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="hadoop_install.html">
+            
+                <a href="hadoop_install.html">
+            
+                    
+                    hadoop 部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="hadoop_devo.html">
+            
+                <a href="hadoop_devo.html">
+            
+                    
+                    hadoop 开发踩坑
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="spark2.html">
+            
+                <a href="spark2.html">
+            
+                    
+                    spark 部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.5" data-path="spark_json.html">
+            
+                <a href="spark_json.html">
+            
+                    
+                    spark 对于复杂JSON的处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="cdh.html">
+            
+                <a href="cdh.html">
+            
+                    
+                    CDH部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="sqoop.html">
+            
+                <a href="sqoop.html">
+            
+                    
+                    sqoop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="flume.html">
+            
+                <a href="flume.html">
+            
+                    
+                    flume
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="question2.html">
+            
+                <a href="question2.html">
+            
+                    
+                    部署常见错误
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="hive.html">
+            
+                <a href="hive.html">
+            
+                    
+                    hive
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="hdfs.html">
+            
+                <a href="hdfs.html">
+            
+                    
+                    hdfs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="hbase.html">
+            
+                <a href="hbase.html">
+            
+                    
+                    hbase
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="spark.html">
+            
+                <a href="spark.html">
+            
+                    
+                    spark
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.14" data-path="rdd.html">
+            
+                <a href="rdd.html">
+            
+                    
+                    rdd操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../java/">
+            
+                <a href="../java/">
+            
+                    
+                    JAVA
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../java/spring%20boot.md">
+            
+                <span>
+            
+                    
+                    Spring Boot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../java/question1.html">
+            
+                <a href="../java/question1.html">
+            
+                    
+                    一个最基本的服务器开发配置模板
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../python/">
+            
+                <a href="../python/">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../python/question1.html">
+            
+                <a href="../python/question1.html">
+            
+                    
+                    Python的函数参数传递方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../python/question2.html">
+            
+                <a href="../python/question2.html">
+            
+                    
+                    @staticmethod和@classmethod的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../linux/">
+            
+                <a href="../linux/">
+            
+                    
+                    linux系统相关
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../linux/update_network_name.html">
+            
+                <a href="../linux/update_network_name.html">
+            
+                    
+                    修改linux网卡名称
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../linux/user.html">
+            
+                <a href="../linux/user.html">
+            
+                    
+                    用户操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../linux/selinux.html">
+            
+                <a href="../linux/selinux.html">
+            
+                    
+                    防火墙
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../k8s/">
+            
+                <a href="../k8s/">
+            
+                    
+                    K8S
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../k8s/question1.html">
+            
+                <a href="../k8s/question1.html">
+            
+                    
+                    k8s安装部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../k8s/question2.html">
+            
+                <a href="../k8s/question2.html">
+            
+                    
+                    k8s常见FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../db/">
+            
+                <a href="../db/">
+            
+                    
+                    数据库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../db/question1.html">
+            
+                <a href="../db/question1.html">
+            
+                    
+                    设置Mysql存储中文
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../ml/">
+            
+                <a href="../ml/">
+            
+                    
+                    机器学习
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../ml/question3.html">
+            
+                <a href="../ml/question3.html">
+            
+                    
+                    一些知识点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../ml/question1.html">
+            
+                <a href="../ml/question1.html">
+            
+                    
+                    过拟合和欠拟合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../ml/question2.html">
+            
+                <a href="../ml/question2.html">
+            
+                    
+                    机器学习流行算法一览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../ml/question4.html">
+            
+                <a href="../ml/question4.html">
+            
+                    
+                    异构计算
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../keycloak/">
+            
+                <a href="../keycloak/">
+            
+                    
+                    Keycloak
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../keycloak/keycloak-java.html">
+            
+                <a href="../keycloak/keycloak-java.html">
+            
+                    
+                    用户统一鉴权服务-适配器使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../keycloak/keycloak-devp.html">
+            
+                <a href="../keycloak/keycloak-devp.html">
+            
+                    
+                    KEYCLOAK 配置文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../idea/">
+            
+                <a href="../idea/">
+            
+                    
+                    IDEA
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../idea/go.html">
+            
+                <a href="../idea/go.html">
+            
+                    
+                    IDEA 无法添加GO SDK的问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../idea/register.html">
+            
+                <a href="../idea/register.html">
+            
+                    
+                    idea激活
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../pmp/">
+            
+                <a href="../pmp/">
+            
+                    
+                    PMP相关
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../pmp/pmp.html">
+            
+                <a href="../pmp/pmp.html">
+            
+                    
+                    一张PMP技能图
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../virtual/">
+            
+                <a href="../virtual/">
+            
+                    
+                    虚拟化
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../virtual/question1.html">
+            
+                <a href="../virtual/question1.html">
+            
+                    
+                    docker容器相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../md/">
+            
+                <a href="../md/">
+            
+                    
+                    Markdown
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../md/question1.html">
+            
+                <a href="../md/question1.html">
+            
+                    
+                    Markdown标记语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../other/">
+            
+                <a href="../other/">
+            
+                    
+                    杂项
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="../other/question1.html">
+            
+                <a href="../other/question1.html">
+            
+                    
+                    git如何修改已提交的commit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.2" data-path="../other/question2.html">
+            
+                <a href="../other/question2.html">
+            
+                    
+                    apidoc 教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >spark 对于复杂JSON的处理</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="spark-&#x5BF9;&#x590D;&#x6742;json&#x5904;&#x7406;&#xFF0C;&#x4E14;json&#x5B57;&#x6BB5;&#x957F;&#x77ED;&#x4E0D;&#x4E00;">spark &#x5BF9;&#x590D;&#x6742;json&#x5904;&#x7406;&#xFF0C;&#x4E14;json&#x5B57;&#x6BB5;&#x957F;&#x77ED;&#x4E0D;&#x4E00;</h1>
+<h3 id="&#x80CC;&#x666F;&#xFF1A;&#x4E00;&#x6761;json&#x6D88;&#x606F;&#x4E2D;&#x6839;&#x636E;&#x67D0;&#x4E2A;&#x5B57;&#x6BB5;&#x4E0D;&#x540C;&#xFF0C;&#x4F1A;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;&#xFF0C;json&#x6709;&#x591A;&#x91CD;&#x5D4C;&#x5957;">&#x80CC;&#x666F;&#xFF1A;&#x4E00;&#x6761;json&#x6D88;&#x606F;&#x4E2D;&#x6839;&#x636E;&#x67D0;&#x4E2A;&#x5B57;&#x6BB5;&#x4E0D;&#x540C;&#xFF0C;&#x4F1A;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;&#xFF0C;json&#x6709;&#x591A;&#x91CD;&#x5D4C;&#x5957;</h3>
+<p>&#x4E3B;&#x8981;&#x4F7F;&#x7528;&#x4E86;</p>
+<ul>
+<li>explode&#xFF1A; &#x5C55;&#x5F00;array&#x6216;map&#x4E3A;&#x591A;&#x884C;</li>
+<li>inline&#xFF1A;&#x5C55;&#x5F00;&#x53EF;&#x4EE5;&#x628A;array[struct[XXX]]&#x76F4;&#x63A5;&#x5C55;&#x5F00;&#x6210;XXX</li>
+</ul>
+<pre><code>scala&gt; val res0 = spark.read.json(&quot;file:///home/hdfs/20200422.csv&quot;)
+res0: org.apache.spark.sql.DataFrame = [collectTime: string, factory: string ... 2 more fields]
+
+scala&gt; res0.printSchema
+root
+ |-- collectTime: string (nullable = true)
+ |-- factory: string (nullable = true)
+ |-- infoList: array (nullable = true)
+ |    |-- element: struct (containsNull = true)
+ |    |    |-- info: struct (nullable = true)
+ |    |    |    |-- EnergyStorageDevice: array (nullable = true)
+ |    |    |    |    |-- element: struct (containsNull = true)
+ |    |    |    |    |    |-- batterynum: long (nullable = true)
+ |    |    |    |    |    |-- dianliu: long (nullable = true)
+ |    |    |    |    |    |-- no: long (nullable = true)
+ |    |    |    |    |    |-- one_voltages: array (nullable = true)
+ |    |    |    |    |    |    |-- element: long (containsNull = true)
+ |    |    |    |    |    |-- this_batterynum: long (nullable = true)
+ |    |    |    |    |    |-- this_no: long (nullable = true)
+ |    |    |    |    |    |-- voltage: long (nullable = true)
+ |    |    |    |-- EnergyStorageDeviceTemperature: array (nullable = true)
+ |    |    |    |    |-- element: struct (containsNull = true)
+ |    |    |    |    |    |-- no: long (nullable = true)
+ |    |    |    |    |    |-- probe_num: long (nullable = true)
+ |    |    |    |    |    |-- probe_values: array (nullable = true)
+ |    |    |    |    |    |    |-- element: long (containsNull = true)
+ |    |    |    |-- alarmSign: string (nullable = true)
+ |    |    |    |-- brakeStatus: long (nullable = true)
+ |    |    |    |-- chargeStatus: long (nullable = true)
+ |    |    |    |-- dcdc: long (nullable = true)
+ |    |    |    |-- driveMotor: array (nullable = true)
+ |    |    |    |    |-- element: struct (containsNull = true)
+ |    |    |    |    |    |-- controllerT: long (nullable = true)
+ |    |    |    |    |    |-- current: long (nullable = true)
+ |    |    |    |    |    |-- inputVoltage: long (nullable = true)
+ |    |    |    |    |    |-- no: long (nullable = true)
+ |    |    |    |    |    |-- rev: long (nullable = true)
+ |    |    |    |    |    |-- status: long (nullable = true)
+ |    |    |    |    |    |-- temperature: long (nullable = true)
+ |    |    |    |    |    |-- torque: long (nullable = true)
+ |    |    |    |-- engineFaultCount: long (nullable = true)
+ |    |    |    |-- engineFaultList: string (nullable = true)
+ |    |    |    |-- faultList: string (nullable = true)
+ |    |    |    |-- gears: long (nullable = true)
+ |    |    |    |-- latitude: string (nullable = true)
+ |    |    |    |-- location: long (nullable = true)
+ |    |    |    |-- longitude: string (nullable = true)
+ |    |    |    |-- maxAlarmLevel: long (nullable = true)
+ |    |    |    |-- maxCodeV: long (nullable = true)
+ |    |    |    |-- maxProbeNoT: long (nullable = true)
+ |    |    |    |-- maxSysNoT: long (nullable = true)
+ |    |    |    |-- maxSysNoV: long (nullable = true)
+ |    |    |    |-- maxT: long (nullable = true)
+ |    |    |    |-- maxValueV: double (nullable = true)
+ |    |    |    |-- minCodeV: long (nullable = true)
+ |    |    |    |-- minProbeNoT: long (nullable = true)
+ |    |    |    |-- minSysNoT: long (nullable = true)
+ |    |    |    |-- minSysNoV: long (nullable = true)
+ |    |    |    |-- minT: long (nullable = true)
+ |    |    |    |-- minValueV: double (nullable = true)
+ |    |    |    |-- motorFaultCount: long (nullable = true)
+ |    |    |    |-- motorFaultList: string (nullable = true)
+ |    |    |    |-- number: long (nullable = true)
+ |    |    |    |-- odo: double (nullable = true)
+ |    |    |    |-- otherFaultCount: long (nullable = true)
+ |    |    |    |-- otherFaultList: string (nullable = true)
+ |    |    |    |-- runMode: long (nullable = true)
+ |    |    |    |-- sir: long (nullable = true)
+ |    |    |    |-- soc: double (nullable = true)
+ |    |    |    |-- speed: double (nullable = true)
+ |    |    |    |-- storedFaultCount: long (nullable = true)
+ |    |    |    |-- totalCurrent: long (nullable = true)
+ |    |    |    |-- totalVoltage: long (nullable = true)
+ |    |    |    |-- travel: double (nullable = true)
+ |    |    |    |-- vehicleStatus: long (nullable = true)
+ |    |    |-- infoType: long (nullable = true)
+ |-- vin: string (nullable = true)
+
+scala&gt; res0.show()
++--------------+-----------+--------------------+-----------------+
+|   collectTime|    factory|            infoList|              vin|
++--------------+-----------+--------------------+-----------------+
+|20200422131027|     futian|[[[,,, 0, 3, 2,,,...|LVBV3J0B6JE900137|
+|20200422131026|yiqijiefang|[[[,,, 0, 3, 1,,,...|LFNA4LDA1JAX07996|
++--------------+-----------+--------------------+-----------------+
+
+
+scala&gt; val res1 = res0.select(res0(&quot;collectTime&quot;), res0(&quot;factory&quot;), expr(&quot;inline(infoList)&quot;), res0(&quot;vin&quot;))
+res1: org.apache.spark.sql.DataFrame = [collectTime: string, factory: string ... 3 more fields]
+
+scala&gt; res1.printSchema
+root
+ |-- collectTime: string (nullable = true)
+ |-- factory: string (nullable = true)
+ |-- info: struct (nullable = true)
+ |    |-- EnergyStorageDevice: array (nullable = true)
+ |    |    |-- element: struct (containsNull = true)
+ |    |    |    |-- batterynum: long (nullable = true)
+ |    |    |    |-- dianliu: long (nullable = true)
+ |    |    |    |-- no: long (nullable = true)
+ |    |    |    |-- one_voltages: array (nullable = true)
+ |    |    |    |    |-- element: long (containsNull = true)
+ |    |    |    |-- this_batterynum: long (nullable = true)
+ |    |    |    |-- this_no: long (nullable = true)
+ |    |    |    |-- voltage: long (nullable = true)
+ |    |-- EnergyStorageDeviceTemperature: array (nullable = true)
+ |    |    |-- element: struct (containsNull = true)
+ |    |    |    |-- no: long (nullable = true)
+ |    |    |    |-- probe_num: long (nullable = true)
+ |    |    |    |-- probe_values: array (nullable = true)
+ |    |    |    |    |-- element: long (containsNull = true)
+ |    |-- alarmSign: string (nullable = true)
+ |    |-- brakeStatus: long (nullable = true)
+ |    |-- chargeStatus: long (nullable = true)
+ |    |-- dcdc: long (nullable = true)
+ |    |-- driveMotor: array (nullable = true)
+ |    |    |-- element: struct (containsNull = true)
+ |    |    |    |-- controllerT: long (nullable = true)
+ |    |    |    |-- current: long (nullable = true)
+ |    |    |    |-- inputVoltage: long (nullable = true)
+ |    |    |    |-- no: long (nullable = true)
+ |    |    |    |-- rev: long (nullable = true)
+ |    |    |    |-- status: long (nullable = true)
+ |    |    |    |-- temperature: long (nullable = true)
+ |    |    |    |-- torque: long (nullable = true)
+ |    |-- engineFaultCount: long (nullable = true)
+ |    |-- engineFaultList: string (nullable = true)
+ |    |-- faultList: string (nullable = true)
+ |    |-- gears: long (nullable = true)
+ |    |-- latitude: string (nullable = true)
+ |    |-- location: long (nullable = true)
+ |    |-- longitude: string (nullable = true)
+ |    |-- maxAlarmLevel: long (nullable = true)
+ |    |-- maxCodeV: long (nullable = true)
+ |    |-- maxProbeNoT: long (nullable = true)
+ |    |-- maxSysNoT: long (nullable = true)
+ |    |-- maxSysNoV: long (nullable = true)
+ |    |-- maxT: long (nullable = true)
+ |    |-- maxValueV: double (nullable = true)
+ |    |-- minCodeV: long (nullable = true)
+ |    |-- minProbeNoT: long (nullable = true)
+ |    |-- minSysNoT: long (nullable = true)
+ |    |-- minSysNoV: long (nullable = true)
+ |    |-- minT: long (nullable = true)
+ |    |-- minValueV: double (nullable = true)
+ |    |-- motorFaultCount: long (nullable = true)
+ |    |-- motorFaultList: string (nullable = true)
+ |    |-- number: long (nullable = true)
+ |    |-- odo: double (nullable = true)
+ |    |-- otherFaultCount: long (nullable = true)
+ |    |-- otherFaultList: string (nullable = true)
+ |    |-- runMode: long (nullable = true)
+ |    |-- sir: long (nullable = true)
+ |    |-- soc: double (nullable = true)
+ |    |-- speed: double (nullable = true)
+ |    |-- storedFaultCount: long (nullable = true)
+ |    |-- totalCurrent: long (nullable = true)
+ |    |-- totalVoltage: long (nullable = true)
+ |    |-- travel: double (nullable = true)
+ |    |-- vehicleStatus: long (nullable = true)
+ |-- infoType: long (nullable = true)
+ |-- vin: string (nullable = true)
+
+scala&gt; res1.show()
++--------------+-----------+--------------------+--------+-----------------+
+|   collectTime|    factory|                info|infoType|              vin|
++--------------+-----------+--------------------+--------+-----------------+
+|20200422131027|     futian|[,,, 0, 3, 2,,,,,...|       1|LVBV3J0B6JE900137|
+|20200422131027|     futian|[,,,,,, [[18, 0, ...|       2|LVBV3J0B6JE900137|
+|20200422131027|     futian|[[[152, 10000, 1,...|       8|LVBV3J0B6JE900137|
+|20200422131027|     futian|[, [[1, 38, [60, ...|       9|LVBV3J0B6JE900137|
+|20200422131027|     futian|[,,,,,,,,,,,,,,, ...|       6|LVBV3J0B6JE900137|
+|20200422131027|     futian|[,,,,,,,,,,, 39.7...|       5|LVBV3J0B6JE900137|
+|20200422131027|     futian|[,, 0000000000000...|       7|LVBV3J0B6JE900137|
+|20200422131026|yiqijiefang|[,,, 0, 3, 1,,,,,...|       1|LFNA4LDA1JAX07996|
+|20200422131026|yiqijiefang|[,,,,,, [[26, 30,...|       2|LFNA4LDA1JAX07996|
+|20200422131026|yiqijiefang|[,,,,,,,,,,, 39.8...|       5|LFNA4LDA1JAX07996|
+|20200422131026|yiqijiefang|[,,,,,,,,,,,,,,, ...|       6|LFNA4LDA1JAX07996|
+|20200422131026|yiqijiefang|[,, 0000000000000...|       7|LFNA4LDA1JAX07996|
+|20200422131026|yiqijiefang|[[[160, 10320, 1,...|       8|LFNA4LDA1JAX07996|
+|20200422131026|yiqijiefang|[, [[1, 32, [58, ...|       9|LFNA4LDA1JAX07996|
++--------------+-----------+--------------------+--------+-----------------+
+
+
+scala&gt; res1.filter(&quot;infoType=8&quot;).select(res1(&quot;collectTime&quot;), res1(&quot;factory&quot;), expr(&quot;inline(info.EnergyStorageDevice)&quot;), res1(&quot;infoType&quot;),res1(&quot;vin&quot;)).show()
++--------------+-----------+----------+-------+---+--------------------+---------------+-------+-------+--------+-----------------+
+|   collectTime|    factory|batterynum|dianliu| no|        one_voltages|this_batterynum|this_no|voltage|infoType|              vin|
++--------------+-----------+----------+-------+---+--------------------+---------------+-------+-------+--------+-----------------+
+|20200422131027|     futian|       152|  10000|  1|[38927, 56335, 56...|            152|      1|   6180|       8|LVBV3J0B6JE900137|
+|20200422131026|yiqijiefang|       160|  10320|  1|[40972, 41740, 50...|            160|      1|   5200|       8|LFNA4LDA1JAX07996|
++--------------+-----------+----------+-------+---+--------------------+---------------+-------+-------+--------+-----------------+
+
+
+scala&gt; res1.filter(&quot;infoType=5&quot;).select(res1(&quot;collectTime&quot;), res1(&quot;factory&quot;), res1(&quot;info.latitude&quot;), res1(&quot;infoType&quot;),res1(&quot;vin&quot;)).show()
++--------------+-----------+---------+--------+-----------------+
+|   collectTime|    factory| latitude|infoType|              vin|
++--------------+-----------+---------+--------+-----------------+
+|20200422131027|     futian|39.718566|       5|LVBV3J0B6JE900137|
+|20200422131026|yiqijiefang|39.875452|       5|LFNA4LDA1JAX07996|
++--------------+-----------+---------+--------+-----------------+
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="spark2.html" class="navigation navigation-prev " aria-label="Previous page: spark 部署">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="cdh.html" class="navigation navigation-next " aria-label="Next page: CDH部署">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"spark 对于复杂JSON的处理","level":"1.3.5","depth":2,"next":{"title":"CDH部署","level":"1.3.6","depth":2,"path":"bigdata/cdh.md","ref":"bigdata/cdh.md","articles":[]},"previous":{"title":"spark 部署","level":"1.3.4","depth":2,"path":"bigdata/spark2.md","ref":"bigdata/spark2.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"bigdata/spark_json.md","mtime":"2020-04-22T08:04:03.767Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-22T08:04:34.237Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
