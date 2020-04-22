@@ -9,6 +9,7 @@
     * [hadoop 部署](bigdata/hadoop_install.md)
     * [hadoop 开发踩坑](bigdata/hadoop_devo.md)
     * [spark 部署](bigdata/spark2.md)
+    * [spark 对于复杂JSON的处理](bigdata/spark_json.md)
     * [CDH部署](bigdata/cdh.md)
     * [sqoop](bigdata/sqoop.md)
     * [flume](bigdata/flume.md)
